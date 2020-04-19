@@ -131,3 +131,97 @@ git status
 nano .gitignore
 git commit -m "added logs to gitignore"
 git push
+git status
+git config core.preloadIndex false
+git status
+git add .
+git commit -m "adding lorrin's edits from last night"
+git push
+git push
+rm -rf *
+ls -l logs
+sudo rm -rf *
+sudo ls
+chmod 777 *
+rm -rf .vscode-server
+rm -rf /.ssh
+rm -rf .ssh
+ls
+cd home
+ls
+cd ..
+cd ~
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd d523653176
+ls -l d523653176
+ls -l
+cd ~
+cls
+clear
+git clone https://github.com/parth-agrawal/CommonHealthProject .
+git clone https://github.com/parth-agrawal/CommonHealthProject
+cd CommonHealthProject
+cd ..
+cd CommonHealthProject 
+mv * ..
+cd ..
+git status
+rm -rf CommonHealthProject
+ls
+git status
+git add .
+git commit -m "Testing server resurrection"
+git push
+git pull
+git pull
+git add .
+git commit -m "Solved merge conflicts"
+git status
+git pull
+;s -a
+ls -a
+rm -rf *
+ls
+ls -a
+rm -rf .git
+rm -rf .gitconfig
+rm -rf .gitignore
+rm -rf .ssh
+rm -rf .viminfo
+ls
+ls -a
+rm -f .bash_history
+ls -a
+git clone https://github.com/parth-agrawal/CommonHealthProject
+cd CommonHealthProject
+ls
+mv * ..
+ls
+ls -a
+mv .git ..
+mv .gitconfig .gitignore .viminfo .bash_history
+mv .gitconfig .gitignore .viminfo .bash_history ..
+ls
+ls -a
+cd ..
+ls
+git log
+rm CommonHealthProject
+rmdir CommonHealthProject
+ls -a
+git statsu
+git status
+git add .
+git commit -m "Fixed server + modified gitignore"
+git push
+git push
+git push
+git push
+git status
+git pull
+git stash
+git pull
