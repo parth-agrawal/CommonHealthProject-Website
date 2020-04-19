@@ -2,3 +2,5 @@ logs/
 
 .ssh/
 .vscode-server/
+.bash_history
+.viminfo
