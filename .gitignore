@@ -1,4 +1,4 @@
-/logs
+logs/
 
-/.ssh
-/.vscode-server
+.ssh/
+.vscode-server/
