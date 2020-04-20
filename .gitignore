@@ -4,3 +4,4 @@ logs/
 .vscode-server/
 .bash_history
 .viminfo
+.ssh.zip
