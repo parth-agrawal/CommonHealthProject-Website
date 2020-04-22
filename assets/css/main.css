@@ -2666,6 +2666,10 @@ input, select, textarea {
 
 /* Actions */
 
+	.resize 	{	
+		margin-left: 20px;
+	}
+
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
