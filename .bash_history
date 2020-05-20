@@ -225,3 +225,63 @@ git status
 git pull
 git stash
 git pull
+git pull
+git pull
+git status
+git stash
+git status
+git pull
+git stash drop
+ls
+ls -a
+cd logs
+ls
+cat traffic.html
+nano traffic.html
+cd traffic.html
+ls
+lsa
+ls-a
+cat index.html
+c d..
+cd ..
+ls
+cat access.log.current
+git pull
+git pull
+git pull
+git pull
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ls
+git pull
+git status
+git status
+git pull
+git status
+git pull
+ls
+git status
+git pull
+git status
+git pull
+git status
+git pull
+git status
+git pull
+git pull
