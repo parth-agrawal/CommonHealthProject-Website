@@ -8,6 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:quit
 :q!
 :x
 :q
@@ -26,13 +27,15 @@
 	s
 
 # File marks:
-'0  2  0  ~/.gitignore
-'1  1  0  ~/.ssh/.gitignore
-'2  2  0  ~/.ssh/id_rsa.pub
-'3  2  1  ~/.git/.gitignore
-'4  1  0  ~/.git/.gitignore
+'0  1  0  ~/.git/MERGE_MSG
+'1  2  0  ~/.gitignore
+'2  1  0  ~/.ssh/.gitignore
+'3  2  0  ~/.ssh/id_rsa.pub
+'4  2  1  ~/.git/.gitignore
+'5  1  0  ~/.git/.gitignore
 
 # Jumplist (newest first):
+-'  1  0  ~/.git/MERGE_MSG
 -'  2  0  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  1  0  ~/.ssh/.gitignore
@@ -85,8 +88,56 @@
 -'  1  0  ~/.git/.gitignore
 -'  2  1  ~/.git/.gitignore
 -'  1  0  ~/.git/.gitignore
+-'  2  0  ~/.gitignore
+-'  1  0  ~/.gitignore
+-'  1  0  ~/.ssh/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  1  0  ~/.ssh/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  0  ~/.ssh/id_rsa.pub
+-'  1  0  ~/.ssh/id_rsa.pub
+-'  2  1  ~/.git/.gitignore
+-'  1  0  ~/.git/.gitignore
+-'  2  1  ~/.git/.gitignore
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	"	1	0
 
 > ~/.gitignore
 	"	2	0
