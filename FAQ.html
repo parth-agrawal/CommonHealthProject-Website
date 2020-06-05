@@ -1,150 +1,148 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Constructed by Lorrin Stone.
+Hi inspectors :) 
 -->
 <html>
-	<link rel="shortcut icon" href="favicon.png" >
+	<link rel="shortcut icon" href="images/logo-color.png" >
 	<head>
-		<title>Frequently Asked Questions</title>
+		<title>The CommonHealth Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+<!--sticky header-->
+    <body class="is-preload">
+        <ul id=menu>
+            <a href="index.html" </a>Home</a>
+            </ul>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">The Commonhealth Project</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="FAQ.html" class="navactive">FAQs</a></li>
-			<!---		<li><a href="how_to_build.html">How to build</a></li> -->
-					</ul>
-				</nav>
-			</header>
+<!-- Wrapper -->
+<div id="wrapper">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Main -->
+    <section class="wrapper style1 align-center">
+        <div class="inner">
+                <h1 class="major">Frequently Asked Questions</h1>
+                <p class="lastupdated" align="right">Last updated 4/26/20.</p>
+                
+        <!-- Collapsibles -->
+        <section id="collapsibles">
+        
+            <h2> About Us </h2>
+                
+                <h3>Who are we?</h3>
+            
+                <p class=faqp>We are a collaborative, community-based team protecting frontline healthcare workers by solving the PPE shortage. 
+                    Our project began as a response to a design challenge proposed by the NJIT Albert Dorman Honors College for a medically sound, marketable face shield.</p>
+                </div>
+            <br></br>
+            <h2>How is the Faceshield Made?</h2> 
+                
+                <h3>How did you test the face shield and verify its effectiveness?</h3>
+                <p class=faqp>Our face shield was constructed and tested by several of the volunteers in our group. As we workshopped the design, we sent out prototypes to local health centers and to healthcare professionals for review. Their feedback has been integral to our design process.</p>
+                </div>
+                
+                <h3>How long does it take to make?</h3>
+                
+                <p class=faqp>The design is very easy to mass-produce and it takes less than 5 minutes to finish constructing a face shield.</p>
+                
+            
+                <h3>What materials are being used to produce the shields?</h3>
+                
+                <p class=faqp>The face shields consist of a clear polyethylene terephthalate (PET) sheet (9”x13”x0.007”), an elastic band (14.5”), a rectangle of foam (1x1x9”), and staples.</p>
+                
+            
+                <button class="collapsible">How much does it cost to produce one face shield?</button>
+                <div class="collapsiblecontent">
+                <p class=faqp>Factoring in all production costs and other expenses, one Faceshield costs $1.31.</p>
+                </div>
+            
+            <br></br>
+            <h2>Where Will These Masks Be Going?</h2>
+                <hr class="collapsibleline"></hr>
+                <button class="collapsible">Where will the masks go?</button>
+                <div class="collapsiblecontent">
+                <p class=faqp>We intend to designate at least 200 shields to NYU Langone Medical Center, 100 shields to Mt. Sinai, and the rest to hospitals in our NJ and NY community. The County of Bergen has released an open request for any and all DIY PPE and we intend to direct a majority of our face shields in Bergen county to them. The letter of interest for the donation of PPE’s on behalf of the county can be found here. In addition to that effort, we hope to donate medical equipment to Holy Name Medical Center, Morristown Medical Center, Bergen Regional Medical Center, and Valley Hospital.        </p>
+                </div>
+                
+            <br></br>
+            <h2>How Can I Contribute?</h2>
+                <hr class="collapsibleline"></hr>
+                <button class="collapsible">Volunteering</button>
+                <div class="collapsiblecontent">
+                <p class=faqp>There are two ways that you can potentially contribute. First and foremost we would sincerely hope that you consider helping us in the volunteering aspect of our operation. Constructing and delivering masks does require a time investment that we hope everyone would consider making. We have two separate facets of our volunteering operation which include delivery drivers that are willing drop kits to the constructors’ homes as well as the hospitals that are in need and constructors who are willing to build the face shields. In order to build face shields, the constructors must have access to a stapler for their household. As of right now, we are focusing our efforts on providing equipment to hospitals in both morris and bergen county, however, we hope to further expand so even if you are not within this area you may be able to help very soon! If you’re interested in volunteering, we request you submit the google form attached and well see you soon! If you are interested in this aspect of our organization you can click the link here.</p>
+                </div>
+                
+                <button class="collapsible">Charitable Donations</button>
+                <div class="collapsiblecontent">
+                <p class=faqp>Other than our volunteering program, a crucial aspect of our operation is the ability to continue providing face masks to these medical professionals that need them. We understand that given the circumstances that not everyone has the time or ability to volunteer. However, charitable donations play a large part in us continuing our mission, especially because we are a student-run organization. In order to best maintain transparency, we will be using a platform called GiveButter which accepts payments in many forms such as Venmo and PayPal. If you decide to choose this route of contributing, thank you so much for keeping us going and please consider sharing this with your friends and family! If you are interested in this aspect of our organization you can click this link here.</p>
+                </div>	
+        </section>
+                
+        <!-- JS for Collapsible Opening -->
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("collapsibleactive");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                }
+              });
+            }
+            </script>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Frequently Asked Questions</h1>
-							<p class="lastupdated" align="right">Last updated 4/26/20.</p>
-							
-					<!-- Collapsibles -->
-					<section id="collapsibles">
-					
-						<h2> About Us </h2>
-							<hr class="collapsibleline"></hr>
-							<button class="collapsible">Who are we?</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>We are a collaborative, community-based team protecting frontline healthcare workers by solving the PPE shortage. 
-								Our project began as a response to a design challenge proposed by the NJIT Albert Dorman Honors College for a medically sound, marketable face shield.</p>
-							</div>
-						<br></br>
-						<h2>How is the Faceshield Made?</h2> 
-							<hr class="collapsibleline"></hr>
-							<button class="collapsible">How did you test the face shield and verify its effectiveness?</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>Our face shield was constructed and tested by several of the volunteers in our group. As we workshopped the design, we sent out prototypes to local health centers and to healthcare professionals for review. Their feedback has been integral to our design process.</p>
-							</div>
-							
-							<button class="collapsible">How long does it take to make?</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>The design is very easy to mass-produce and it takes less than 5 minutes to finish constructing a face shield.</p>
-							</div>
-						
-							<button class="collapsible">What materials are being used to produce the shields?</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>The face shields consist of a clear polyethylene terephthalate (PET) sheet (9”x13”x0.007”), an elastic band (14.5”), a rectangle of foam (1x1x9”), and staples.</p>
-							</div>
-						
-							<button class="collapsible">How much does it cost to produce one face shield?</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>Factoring in all production costs and other expenses, one Faceshield costs $1.31.</p>
-							</div>
-						
-						<br></br>
-						<h2>Where Will These Masks Be Going?</h2>
-							<hr class="collapsibleline"></hr>
-							<button class="collapsible">Where will the masks go?</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>We intend to designate at least 200 shields to NYU Langone Medical Center, 100 shields to Mt. Sinai, and the rest to hospitals in our NJ and NY community. The County of Bergen has released an open request for any and all DIY PPE and we intend to direct a majority of our face shields in Bergen county to them. The letter of interest for the donation of PPE’s on behalf of the county can be found here. In addition to that effort, we hope to donate medical equipment to Holy Name Medical Center, Morristown Medical Center, Bergen Regional Medical Center, and Valley Hospital.        </p>
-							</div>
-							
-						<br></br>
-						<h2>How Can I Contribute?</h2>
-							<hr class="collapsibleline"></hr>
-							<button class="collapsible">Volunteering</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>There are two ways that you can potentially contribute. First and foremost we would sincerely hope that you consider helping us in the volunteering aspect of our operation. Constructing and delivering masks does require a time investment that we hope everyone would consider making. We have two separate facets of our volunteering operation which include delivery drivers that are willing drop kits to the constructors’ homes as well as the hospitals that are in need and constructors who are willing to build the face shields. In order to build face shields, the constructors must have access to a stapler for their household. As of right now, we are focusing our efforts on providing equipment to hospitals in both morris and bergen county, however, we hope to further expand so even if you are not within this area you may be able to help very soon! If you’re interested in volunteering, we request you submit the google form attached and well see you soon! If you are interested in this aspect of our organization you can click the link here.</p>
-							</div>
-							
-							<button class="collapsible">Charitable Donations</button>
-							<div class="collapsiblecontent">
-							<p class=faqp>Other than our volunteering program, a crucial aspect of our operation is the ability to continue providing face masks to these medical professionals that need them. We understand that given the circumstances that not everyone has the time or ability to volunteer. However, charitable donations play a large part in us continuing our mission, especially because we are a student-run organization. In order to best maintain transparency, we will be using a platform called GiveButter which accepts payments in many forms such as Venmo and PayPal. If you decide to choose this route of contributing, thank you so much for keeping us going and please consider sharing this with your friends and family! If you are interested in this aspect of our organization you can click this link here.</p>
-							</div>	
-					</section>
-							
-					<!-- JS for Collapsible Opening -->
-						<script>
-						var coll = document.getElementsByClassName("collapsible");
-						var i;
-						
-						for (i = 0; i < coll.length; i++) {
-						  coll[i].addEventListener("click", function() {
-							this.classList.toggle("collapsibleactive");
-							var content = this.nextElementSibling;
-							if (content.style.maxHeight){
-							  content.style.maxHeight = null;
-							} else {
-							  content.style.maxHeight = content.scrollHeight + "px";
-							}
-						  });
-						}
-						</script>
-		
-		<br></br>
-		<h2> Further Questions? Contact us! </h2>
-			<h3>Management</h3>
-			<h4>Parth Agrawal, Project Coordinator: 973-832-8684 </h4>
-			<h4>Mark Pothen, Supply Chain Manager & Logistics: 201-580-7195 </h4>
-			<h4>Daniel Lee, Promotion Manager: 916-676-1504</h4>
-			<h4>Ruth Fiore, Logistics Manager: 848-525-6352 </h4>
-			<h4>Juliana Yang, Design and Outreach Manager: 908-967-8786</h4>
-			<h4>Owais Aftab, Finance Manager: 732-809-8093</h4>
-			<h4>John Adé Kolade, Design and Innovation Manager: 607-444-2635</h4>
-			
-		
-		
-						</div>
-					</section>
-
-			</div>
-					
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; TheCommonhealthProject. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> <li>Constructed by Lorrin Stone.</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<br></br>
+<h2> Further Questions? Contact us! </h2>
+<h3>Management</h3>
+<h4>Parth Agrawal, Project Coordinator: 973-832-8684 </h4>
+<h4>Mark Pothen, Supply Chain Manager & Logistics: 201-580-7195 </h4>
+<h4>Daniel Lee, Promotion Manager: 916-676-1504</h4>
+<h4>Ruth Fiore, Logistics Manager: 848-525-6352 </h4>
+<h4>Juliana Yang, Design and Outreach Manager: 908-967-8786</h4>
+<h4>Owais Aftab, Finance Manager: 732-809-8093</h4>
+<h4>John Adé Kolade, Design and Innovation Manager: 607-444-2635</h4>
 
 
-	</body>
+
+            </div>
+        </section>
+
+</div>
+        
+ 				<!-- Footer -->
+                 <footer class="wrapper style1 align-center">
+                    <div class="inner">
+                        <ul class="icons">
+                            <!--<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+                            <li><a href="https://www.instagram.com/thecommonhealthproject/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="https://www.linkedin.com/company/commonhealthproject/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="mailto:contact@commonhealthproject.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                        <p>&copy; TheCommonHealthProject. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>. Constructed by Lorrin Stone. 
+                            Rights reserved to original picture owners. </p>
+                    </div>
+                </footer>
+                
+            </div>
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
 </html>
