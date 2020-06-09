@@ -8626,4 +8626,68 @@ input, select, textarea {
 			margin-top: -2.5em;
 			}
 
-			
+	/* Who We Are Page */
+	
+	.wwabody {
+		padding: 0px 50px 0 50px;
+	}
+	 
+
+	.parent {
+		padding: 0px 50px 0 50px;
+		height: 200px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content:flex-start;
+		text-align: center;
+	}
+	
+	.div1 {
+		width: 800px;
+		font-size: 65px;
+	}
+	
+	.div2 {
+		margin: 0px 0 0px 0;
+		max-width: 500px;
+		flex: 0 1 auto;
+		font-size: 20px;
+	}
+
+	.div3 {
+		width: 180px;
+		text-align: center;
+	}
+	
+	.div4 {
+		margin: 5px;
+		width: 400px;
+		text-align: center;
+	}
+	
+	.wwapictures {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		justify-items: center;
+	}
+	
+	figcaption {
+		text-align: center;
+		font-size: 120%;
+	}
+	
+	figcaption > p {
+		color: red;
+		font-size: 80%;
+		margin: 0 0 0px 0;
+		padding: 0;
+	}
+	
+	.juliana {
+		margin: 0 0 3px 0;
+	}
+
+	.specialp {
+		font-size: 60%;
+	}
