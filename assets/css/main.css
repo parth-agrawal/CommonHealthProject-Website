@@ -8649,27 +8649,40 @@ input, select, textarea {
 	}
 	
 	.div2 {
-		margin: 0px 0 0px 0;
 		max-width: 500px;
 		flex: 0 1 auto;
-		font-size: 20px;
+		font-size: 25px;
 	}
 
-	.div3 {
-		width: 180px;
+	.meet-the-team {
 		text-align: center;
 	}
 	
-	.div4 {
-		margin: 5px;
-		width: 400px;
-		text-align: center;
-	}
 	
 	.wwapictures {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 20px;	
 		justify-items: center;
+		margin: 90px auto 0 auto;
+		max-width: 940px;
+	}
+	
+	.second-row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		justify-items: center;
+		max-width: 700px;
+		margin: 20px auto 20px auto ;
+		
+	}
+	
+	.third-row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		justify-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 	
 	figcaption {
@@ -8690,4 +8703,17 @@ input, select, textarea {
 
 	.specialp {
 		font-size: 60%;
+	}
+
+	.mission-statement-title {
+		width: 400px;
+		text-align: center;
+		margin: 40px 0px 0px 0px;
+		font-size: 50px;
+	}
+	
+	.mission-statement {
+		margin: 5px 0 80px 0px;
+		width: 500px;
+		text-align: center;
 	}
