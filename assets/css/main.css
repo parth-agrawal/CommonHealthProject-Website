@@ -8650,7 +8650,7 @@ input, select, textarea {
 		text-align: center;
 	}
 	
-	.div1 {
+	.about-us {
 		width: 800px;
 		font-size: 65px;
 		margin: 10px 0px 10px 0px;
@@ -8659,9 +8659,34 @@ input, select, textarea {
 	.div2 {
 		min-width: 300px;
 		max-width: 500px;
-		font-size: 25px;
+		font-size: 30px;
 	}
 
+	.flexparent {
+		display:flex;
+		justify-content: space-between;
+		margin: 0 40px 0 40px;
+	}
+	.how-we-started {
+		font-size: 50px;
+	}
+
+		.title {
+			font-size: 50px;
+			margin: 0;
+			text-align: center;
+		}
+		.content {
+			font-size: 20px;
+			max-width: 400px;
+			text-align: center;
+		}
+
+
+	.our-model {
+		
+	}
+	
 	.meet-the-team {
 		text-align: center;
 		font-size: 60px;
@@ -8673,18 +8698,23 @@ input, select, textarea {
 			font-size: 45px;
 		}
 
+
 		.wwawrapper.style1.align-center {
 			padding-top: 30px;
 		}
 	}
 	
-	
+	@media (max-width: 500px) {
+		.wwapictures {
+			padding-top: 350px;
+		}	
+	}
 	.wwapictures {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		grid-gap: 20px;	
 		justify-items: center;
-		margin: 160px auto 0 auto;
+		margin: 700px auto 0 auto;
 		max-width: 940px;
 	}
 	
