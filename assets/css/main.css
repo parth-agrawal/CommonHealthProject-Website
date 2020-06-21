@@ -8631,7 +8631,14 @@ input, select, textarea {
 	.wwabody {
 		padding: 0px 50px 0 50px;
 	}
-	 
+	
+	#wwamenu {
+		position: fixed;
+		right: 0;
+		top: 8%;
+		width: 5em;
+		margin-top: -2.5em;
+		}
 
 	.parent {
 		padding: 0px 50px 0 50px;
@@ -8646,7 +8653,7 @@ input, select, textarea {
 	.div1 {
 		width: 800px;
 		font-size: 65px;
-		margin: 0px 0px 10px 0px;
+		margin: 10px 0px 10px 0px;
 	}
 	
 	.div2 {
@@ -8663,7 +8670,11 @@ input, select, textarea {
 
 	@media (max-width: 600px) {
 		.meet-the-team {
-			font-size: 50px;
+			font-size: 45px;
+		}
+
+		.wwawrapper.style1.align-center {
+			padding-top: 30px;
 		}
 	}
 	
@@ -8679,7 +8690,7 @@ input, select, textarea {
 	
 	.second-row {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		justify-items: center;
 		max-width: 700px;
 		margin: 20px auto 20px auto ;
@@ -8720,7 +8731,7 @@ input, select, textarea {
 	.mission-statement-title {
 		width: 400px;
 		text-align: center;
-		margin: 40px 0px 0px 0px;
+		margin: 30px 0px 0px 0px;
 		font-size: 50px;
 	}
 	
@@ -8806,4 +8817,8 @@ input, select, textarea {
 	to {
 		opacity: 1;
 	}
+}
+
+.wwawrapper.style1.align-center {
+	margin-top: 100px;
 }
