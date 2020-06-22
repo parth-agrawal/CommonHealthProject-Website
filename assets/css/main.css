@@ -2135,7 +2135,7 @@ input, select, textarea {
 		input[type="button"].fit,
 		button.fit,
 		.button.fit {
-			width: 100%;
+			width: 38%;
 		}
 
 		input[type="submit"].small,
@@ -8638,54 +8638,47 @@ input, select, textarea {
 		top: 8%;
 		width: 5em;
 		margin-top: -2.5em;
-		}
+	}
 
 	.parent {
-		padding: 0px 50px 0 50px;
-		height: 200px;
-		display: flex;
-		flex-flow: column nowrap;
-		align-items: center;
-		justify-content:flex-start;
-		text-align: center;
+		display: flex;	
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 200px 0 200px;
 	}
+
 	
-	.about-us {
-		width: 800px;
-		font-size: 65px;
-		margin: 10px 0px 10px 0px;
-	}
-	
-	.div2 {
-		min-width: 300px;
+	.about-us {	
 		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#about-us {
+		font-size: 70px;
+	}
+
+	#about-us-content {
 		font-size: 30px;
 	}
-
-	.flexparent {
-		display:flex;
-		justify-content: space-between;
-		margin: 0 40px 0 40px;
-	}
 	.how-we-started {
-		font-size: 50px;
+		max-width: 400px;
 	}
 
-		.title {
+	.our-model {
+		max-width: 400px;
+	}
+	
+		.wwatitle {
 			font-size: 50px;
 			margin: 0;
 			text-align: center;
 		}
-		.content {
+		.wwacontent {
 			font-size: 20px;
-			max-width: 400px;
 			text-align: center;
 		}
 
 
-	.our-model {
-		
-	}
 	
 	.meet-the-team {
 		text-align: center;
@@ -8694,27 +8687,30 @@ input, select, textarea {
 	}
 
 	@media (max-width: 600px) {
-		.meet-the-team {
+		.meet-the-team,.wwatitle {
 			font-size: 45px;
+		}
+
+		.parent {
+			justify-content: center;
+			margin: 0;
 		}
 
 
 		.wwawrapper.style1.align-center {
-			padding-top: 30px;
+			padding-top: 0px;
 		}
 	}
 	
 	@media (max-width: 500px) {
-		.wwapictures {
-			padding-top: 350px;
-		}	
+		
 	}
 	.wwapictures {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		grid-gap: 20px;	
 		justify-items: center;
-		margin: 700px auto 0 auto;
+		margin: 20px auto 0 auto;
 		max-width: 940px;
 	}
 	
@@ -8766,18 +8762,18 @@ input, select, textarea {
 	}
 	
 	.mission-statement {
-		margin: 5px 0 80px 0px;
+		margin: 0 auto 0 auto;	
 		min-width: 350px;
 		max-width: 500px;
 		text-align: center;
-		font-size: 20px;
+
 	}
 
 
 	/* Who We Are Page Animations */
 
 
-	.meet-the-team, .div1, .div2 {
+	.meet-the-team,.parent,.about-us {
 		animation: 1s fadeIn;
 		animation-timing-function: ease-in;
 	}
@@ -8849,6 +8845,4 @@ input, select, textarea {
 	}
 }
 
-.wwawrapper.style1.align-center {
-	margin-top: 100px;
-}
+
