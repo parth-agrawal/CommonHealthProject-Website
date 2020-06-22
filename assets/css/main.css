@@ -27,7 +27,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -2135,7 +2136,7 @@ input, select, textarea {
 		input[type="button"].fit,
 		button.fit,
 		.button.fit {
-			width: 38%;
+			width: 32%;
 		}
 
 		input[type="submit"].small,
@@ -2643,7 +2644,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			width: 40%;
+			width: 60%;
 			max-width: 10rem;
 		}
 
@@ -2766,6 +2767,8 @@ input, select, textarea {
 		margin-left: -1rem;
 		padding-left: 0;
 	}
+	
+
 
 		ul.actions li {
 			padding: 0 0 0 1rem;
@@ -7245,7 +7248,7 @@ input, select, textarea {
 	@media screen and (max-width: 1680px) {
 
 		.wrapper.style1 > .inner {
-			padding: 5rem 2.5rem 3rem 2.5rem ;
+			padding: 2rem 2.5rem 3rem 2.5rem ;
 		}
 
 	}
@@ -7273,6 +7276,23 @@ input, select, textarea {
 		}
 
 	}
+
+	.construction-instructions-section {
+		text-align: center;
+	}
+
+	.construction-video {
+		display: block;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 700px) {
+		.construction-video {
+			width: 350px;
+		}
+	}
+
+
 
 /* Wrapper (style2) */
 
@@ -8618,36 +8638,19 @@ input, select, textarea {
 			}
 
 
-#menu {
-			position: fixed;
-			right: 0;
-			top: 10%;
-			width: 8em;
-			margin-top: -2.5em;
-			}
 
-	/* Who We Are Page */
+	/* About Us Page */
 	
-	.wwabody {
-		padding: 0px 50px 0 50px;
-	}
-	
-	#wwamenu {
-		position: fixed;
-		right: 0;
-		top: 8%;
-		width: 5em;
-		margin-top: -2.5em;
-	}
+	/* About Us Containers */
 
 	.parent {
 		display: flex;	
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 0 200px 0 200px;
+		margin: 0 180px 0 180px;
 	}
 
-	
+	/* About Us Content/Headers */
 	.about-us {	
 		max-width: 500px;
 		margin: 0 auto;
@@ -8661,11 +8664,15 @@ input, select, textarea {
 		font-size: 30px;
 	}
 	.how-we-started {
-		max-width: 400px;
+		max-width: 430px;
+	}
+
+	#how-we-started {
+		font-size: 23.2px;
 	}
 
 	.our-model {
-		max-width: 400px;
+		max-width: 450px;
 	}
 	
 		.wwatitle {
@@ -8674,43 +8681,32 @@ input, select, textarea {
 			text-align: center;
 		}
 		.wwacontent {
-			font-size: 20px;
+			font-size: 22px;
 			text-align: center;
 		}
 
+	.mission-statement {
+		margin: 0 auto 0 auto;	
+		min-width: 350px;
+		max-width: 500px;
+		text-align: center;
 
-	
+	}
+
 	.meet-the-team {
 		text-align: center;
 		font-size: 60px;
 		min-width: 400px;
 	}
 
-	@media (max-width: 600px) {
-		.meet-the-team,.wwatitle {
-			font-size: 45px;
-		}
+	/* About Us Pictures */
 
-		.parent {
-			justify-content: center;
-			margin: 0;
-		}
-
-
-		.wwawrapper.style1.align-center {
-			padding-top: 0px;
-		}
-	}
-	
-	@media (max-width: 500px) {
-		
-	}
 	.wwapictures {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		grid-gap: 20px;	
 		justify-items: center;
-		margin: 20px auto 0 auto;
+		margin: 0px auto 0 auto;
 		max-width: 940px;
 	}
 	
@@ -8725,16 +8721,19 @@ input, select, textarea {
 	
 	.third-row {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		justify-items: center;
-		max-width: 1200px;
+		max-width: 1600px;
 		margin: 0 auto;
 	}
 	
+
+	/* About Us Picture Captions */
 	.img1, .img2, .img3, .img4, .img5, .img6, .img7, 
-	 .img8, .img9, .img10, .img11, .img12{
+	 .img8, .img9, .img10, .img11, .img12, .img13{
 		margin: 10px 0 0 0;
 	}
+	
 	figcaption {
 		text-align: center;
 		font-size: 120%;
@@ -8754,26 +8753,10 @@ input, select, textarea {
 		font-size: 60%;
 	}
 
-	.mission-statement-title {
-		width: 400px;
-		text-align: center;
-		margin: 30px 0px 0px 0px;
-		font-size: 50px;
-	}
-	
-	.mission-statement {
-		margin: 0 auto 0 auto;	
-		min-width: 350px;
-		max-width: 500px;
-		text-align: center;
-
-	}
-
 
 	/* Who We Are Page Animations */
 
-
-	.meet-the-team,.parent,.about-us {
+	.meet-the-team,.parent,.about-us, .mission-statement {
 		animation: 1s fadeIn;
 		animation-timing-function: ease-in;
 	}
@@ -8825,12 +8808,8 @@ input, select, textarea {
 		animation: 3.6s fadeIn;
 		animation-timing-function: ease-in;
 	}
-	.mission-statement-title {
-		animation: 3.2s fadeIn;
-		animation-timing-function: ease-in;
-	}
-	.mission-statement {
-		animation: 3.2s fadeIn;
+	.img13 {
+		animation: 3.8s fadeIn;
 		animation-timing-function: ease-in;
 	}
 
@@ -8845,4 +8824,60 @@ input, select, textarea {
 	}
 }
 
+/* Sticky Header */
+nav {
+	position: sticky;
+	top: 0;
+	border-bottom: 1px solid black;
+	background-color: white;
+	font-size: 25px;
+	z-index: 1;
+}
 
+
+nav ul {
+	display: flex; 
+	justify-content: center;
+	margin: 0;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 10px 80px 10px 0px;
+}
+nav ul li a {
+	display: block;
+	text-decoration: none;	
+}
+
+nav ul li:last-child {
+	margin: 10px 0px 10px 0px;
+}
+
+/* AU Media Queries */
+
+@media (max-width: 600px) {
+	.meet-the-team,.wwatitle {
+		font-size: 45px;
+	}
+
+	.parent {
+		justify-content: center;
+		margin: 0;
+	}
+
+	.wwawrapper.style1.align-center {
+		padding-top: 0px;
+	}
+
+	nav ul li {
+		margin: 10px 30px 10px 0px;
+		padding: 0px;
+		font-size: 20px;
+	}
+	nav ul li:first-child {
+		margin: 10px 35px 10px 0px;
+	}
+	
+	
+}
