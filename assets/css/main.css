@@ -8653,7 +8653,7 @@ input, select, textarea {
 	/* About Us Content/Headers */
 	.about-us {	
 		max-width: 500px;
-		margin: 0 auto;
+		margin: 20px auto 0 auto;
 	}
 
 	#about-us {
@@ -8687,10 +8687,14 @@ input, select, textarea {
 
 	.mission-statement {
 		margin: 0 auto 0 auto;	
-		min-width: 350px;
-		max-width: 500px;
 		text-align: center;
+		background-color: lightblue;
+		padding: 80px;
+	}
 
+	.mission-statement > p {
+		margin: 0 50px 0 50px;
+		font-size: 41px;
 	}
 
 	.meet-the-team {
@@ -8715,22 +8719,30 @@ input, select, textarea {
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		justify-items: center;
 		max-width: 700px;
-		margin: 20px auto 20px auto ;
+		margin: 20px auto 20px auto;
 		
 	}
 	
 	.third-row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 20px;	
 		justify-items: center;
-		max-width: 1600px;
-		margin: 0 auto;
+		margin: 0px auto 0 auto;
+		max-width: 940px;
 	}
 	
+	.fourth-row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		justify-items: center;
+		max-width: 700px;
+		margin: 20px auto 20px auto;
+	}
 
 	/* About Us Picture Captions */
 	.img1, .img2, .img3, .img4, .img5, .img6, .img7, 
-	 .img8, .img9, .img10, .img11, .img12, .img13{
+	 .img8, .img9, .img10, .img11, .img12, .img13, .img14{
 		margin: 10px 0 0 0;
 	}
 	
@@ -8756,10 +8768,16 @@ input, select, textarea {
 
 	/* Who We Are Page Animations */
 
-	.meet-the-team,.parent,.about-us, .mission-statement {
+	.meet-the-team,.parent,.about-us {
 		animation: 1s fadeIn;
 		animation-timing-function: ease-in;
 	}
+
+	.mission-statement {
+		animation: 2s fadeIn;
+		animation-timing-function: ease-in;
+	}
+
 	.img1 {
 		animation: 1s fadeIn;
 		animation-timing-function: ease-in;
@@ -8812,6 +8830,12 @@ input, select, textarea {
 		animation: 3.8s fadeIn;
 		animation-timing-function: ease-in;
 	}
+	
+	.img14 {
+		animation: 3.8s fadeIn;
+		animation-timing-function: ease-in;
+	}
+
 
 
 @keyframes fadeIn {
@@ -8871,13 +8895,36 @@ nav ul li:last-child {
 	}
 
 	nav ul li {
-		margin: 10px 30px 10px 0px;
+		margin: 10px 25px 10px 0px;
 		padding: 0px;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	nav ul li:first-child {
 		margin: 10px 35px 10px 0px;
 	}
 	
-	
+}
+
+/* Statistics Page */
+
+/*Donation Centers*/
+
+.donation-centers {
+	display: block;
+	text-align: center;
+}
+
+.donation-centers > ul > li {
+	list-style: none;
+	font-size: 20px;
+}
+
+.county {
+	font-weight: bold;
+	margin: 3px auto 3px auto;
+	font-size: 25px;
+}
+
+.milestones {
+	text-align: center;
 }
