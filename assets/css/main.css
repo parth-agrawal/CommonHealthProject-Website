@@ -8688,7 +8688,7 @@ input, select, textarea {
 	.mission-statement {
 		margin: 0 auto 0 auto;	
 		text-align: center;
-		background-color: lightblue;
+		background-color: #54C0A6;
 		padding: 80px;
 	}
 
@@ -8769,7 +8769,7 @@ input, select, textarea {
 	/* Who We Are Page Animations */
 
 	.meet-the-team,.parent,.about-us {
-		animation: 1s fadeIn;
+		animation: 2.4s fadeIn;
 		animation-timing-function: ease-in;
 	}
 
@@ -8902,10 +8902,33 @@ nav ul li:last-child {
 	nav ul li:first-child {
 		margin: 10px 35px 10px 0px;
 	}
+
+	.mission-statement {
+		padding: 10px;
+	}
+
+	.mission-statement > p {
+		font-size: 27px;
+		margin: 10px;
+	}
+
 	
 }
 
 /* Statistics Page */
+
+.constructed10000 {
+	font-size: 100px;
+}
+
+.volunteers200 {
+	font-size: 50px;
+}
+
+.urmomgay {
+	font-size: 30px;
+	margin: 50px 0 50px 0;
+}
 
 /*Donation Centers*/
 
