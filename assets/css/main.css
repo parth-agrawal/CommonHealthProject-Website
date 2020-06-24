@@ -8932,18 +8932,34 @@ nav ul li:last-child {
 /*Donation Centers*/
 
 .donation-centers {
-	display: block;
 	text-align: center;
-	margin: 20px 0 0 0;
+	margin: 0px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-.donation-centers > ul{
+.donation-centers > div > ul{
 	padding: 0;
 }
 
-.donation-centers > ul > li {
+.donation-centers > div > ul > li {
 	list-style: none;
 	font-size: 20px;
+}
+
+.donation-centers-header {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.bergen-county {
+	overflow-y: scroll;
+}
+
+.bergen-county::-webkit-scrollbar {
+	display: none;
 }
 
 .county {
@@ -8954,4 +8970,19 @@ nav ul li:last-child {
 
 .milestones {
 	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.morris-county, .bergen-county, .union-county, .middlesex-county, .somerset-county {
+		margin: 0 auto;
+	}
+	.constructed10000 {
+		font-size: 60px;
+	}
+	.bergen-county {
+		margin-bottom: 20px;
+	}
+	.donation-centers-header {
+		margin-top: 0px;
+	}
 }
