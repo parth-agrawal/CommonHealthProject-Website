@@ -8638,90 +8638,177 @@ input, select, textarea {
 			}
 
 
-
-	/* About Us Page */
+	/* Redesign V3 */
 	
-	/* About Us Containers */
+	.wrapper {
+		margin: 0 auto;
+		width: 85%;
+	}
 
-	.parent {
-		display: flex;	
-		flex-wrap: wrap;
+	/* Sticky Header */
+	
+	nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 21px;
+		z-index: 6;
+		width: 100%;
+		display: flex; 
 		justify-content: space-between;
-		margin: 0 180px 0 180px;
 	}
 
-	/* About Us Content/Headers */
-	.about-us {	
-		max-width: 500px;
-		margin: 20px auto 0 auto;
-	}
-
-	#about-us {
-		font-size: 70px;
-	}
-
-	#about-us-content {
-		font-size: 30px;
-	}
-	.how-we-started {
-		max-width: 430px;
-	}
-
-	#how-we-started {
-		font-size: 23.2px;
-	}
-
-	.our-model {
-		max-width: 450px;
-	}
-	
-		.wwatitle {
-			font-size: 50px;
-			margin: 0;
-			text-align: center;
-		}
-		.wwacontent {
-			font-size: 22px;
-			text-align: center;
-		}
-
-	.mission-statement {
-		margin: 0 auto 0 auto;	
-		text-align: center;
-		background-color: #02C0B9;
-		padding: 80px;
-	}
-
-	.mission-statement > p {
-		margin: 0 50px 0 50px;
-		font-size: 36px;
+	nav .chp {
+		text-decoration: none;
+		display: inline;
+		position: relative;
+		margin: 30px 0px 0px 60px;
+		font-size: 26px;
 		color: white;
 	}
 
-	.meet-the-team {
-		text-align: center;
-		font-size: 60px;
-		min-width: 400px;
+	nav ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
 	}
 
+	nav ul li {
+		list-style: none;
+		margin: 30px 60px 0px 0px;
+		position: relative;
+	}
+
+	nav ul li a {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		color: white;
+	}
+
+
+
+	.nav-sticky {
+		left: 0;
+		font-size: 21px;
+		position: fixed;
+		top: 0px;
+		z-index: 2;
+		width: 100%;
+		display: flex; 
+		justify-content: space-between;
+		
+	}
+
+	.nav-sticky ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 20px 0;
+	}
+
+	.nav-sticky ul li {
+		list-style: none;
+		margin: 10px 60px 0px 0px;
+		position: relative;
+	}
+
+	.nav-sticky ul li a {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		color: grey;
+	}
+
+	.nav-sticky .chp-sticky {
+		text-decoration: none;
+		display: inline;
+		position: relative;
+		margin: 10px 0px 0px 60px;
+		padding: 20px 0;
+		font-size: 26px;
+		color: #2C7BAC;
+		font-weight: bold;
+	}
+
+
+	/* Who We Are */
+	
+	/* WWA Containers */
+
+
+	/* About Us Content/Headers */
+	
+	.who-we-are-container {
+		height: 500px;
+		background-color: #2C7BAC;
+		display: flex;
+		z-index: 3;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.who-we-are-content {
+		text-align: left;
+		width: 85%;
+		color: white;
+		font-size: 45px;
+
+	}
+
+	.how-we-started {
+		display: flex;
+		flex-direction: column;
+		margin-top: 200px;
+		flex-wrap: wrap;
+		z-index: 1;
+	}
+
+	.how-we-started-header {
+		font-size: 40px;
+		font-weight: bold;
+		color: #2C7BAC;
+		margin: 0 0 20px 0;
+	}
+
+	.how-we-started-content {
+		font-size: 25px;
+	}
+
+	.meet-our-team {
+		text-align: center;
+		font-size: 40px;
+		color: #2C7BAC;
+		font-weight: bold;
+	}
+
+	
 	/* About Us Pictures */
 
-	.wwapictures {
+	.first-row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		grid-gap: 20px;	
 		justify-items: center;
 		margin: 0px auto 0 auto;
-		max-width: 940px;
+		max-width: 1200px;
+	}
+
+	.first-row img, 
+	.second-row img,
+	.third-row img,
+	.fourth-row img,
+	.fifth-row img{
+		border-radius: 30px;
 	}
 	
 	.second-row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		justify-items: center;
-		max-width: 700px;
 		margin: 20px auto 20px auto;
-		
+		max-width: 1200px;
 	}
 	
 	.third-row {
@@ -8730,16 +8817,25 @@ input, select, textarea {
 		grid-gap: 20px;	
 		justify-items: center;
 		margin: 0px auto 0 auto;
-		max-width: 940px;
+		max-width: 1200px;
 	}
 	
 	.fourth-row {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		justify-items: center;
-		max-width: 700px;
 		margin: 20px auto 20px auto;
+		max-width: 1200px;
 	}
+	
+	.fifth-row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		justify-items: center;
+		margin: 20px auto 20px auto;
+		max-width: 1200px;
+	}
+
 
 	/* About Us Picture Captions */
 	.img1, .img2, .img3, .img4, .img5, .img6, .img7, 
@@ -8767,15 +8863,10 @@ input, select, textarea {
 	}
 
 
-	/* Who We Are Page Animations */
+	/* Who We Are Page Animation 
 
-	.meet-the-team,.parent,.about-us {
+	.meet-the-team, {
 		animation: 2.4s fadeIn;
-		animation-timing-function: ease-in;
-	}
-
-	.mission-statement {
-		animation: 2s fadeIn;
 		animation-timing-function: ease-in;
 	}
 
@@ -8837,6 +8928,11 @@ input, select, textarea {
 		animation-timing-function: ease-in;
 	}
 
+	.img15{
+		animation: 4s fadeIn;
+		animation-timing-function: ease-in;
+	}
+
 
 
 @keyframes fadeIn {
@@ -8848,51 +8944,27 @@ input, select, textarea {
 		opacity: 1;
 	}
 }
+*/
 
-/* Sticky Header */
-nav {
-	position: sticky;
-	top: 0;
-	border-bottom: 1px solid black;
-	background-color: white;
-	font-size: 25px;
-	z-index: 1;
-}
-
-
-nav ul {
-	display: flex; 
-	justify-content: center;
-	margin: 0;
-}
-
-nav ul li {
-	list-style: none;
-	margin: 10px 80px 10px 0px;
-}
-nav ul li a {
-	display: block;
-	text-decoration: none;	
-}
-
-nav ul li:last-child {
-	margin: 10px 0px 10px 0px;
-}
 
 /* AU Media Queries */
 
 @media (max-width: 600px) {
-	.meet-the-team,.wwatitle {
+	.meet-the-team {
 		font-size: 45px;
 	}
 
-	.parent {
-		justify-content: center;
-		margin: 0;
+	.how-we-started {
+		margin-top: 30px;
 	}
-
-	.wwawrapper.style1.align-center {
-		padding-top: 0px;
+	.how-we-started-header {
+		margin: 0 auto;
+		font-size: 30px;
+	}
+	
+	.how-we-started-content {
+		text-align: center;
+		font-size: 20px;
 	}
 
 	nav ul li {
@@ -8904,16 +8976,12 @@ nav ul li:last-child {
 		margin: 10px 35px 10px 0px;
 	}
 
-	.mission-statement {
-		padding: 10px;
+	.who-we-are-container {
+		height: 300px;
 	}
-
-	.mission-statement > p {
-		font-size: 27px;
-		margin: 10px;
+	.who-we-are-content {
+		font-size: 20px;
 	}
-
-	
 }
 
 /* Statistics Page */
