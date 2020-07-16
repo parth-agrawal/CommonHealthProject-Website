@@ -1,11 +1,15 @@
-@import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+/* @import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i"); */
 
 /*
 	Story by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -8642,16 +8646,59 @@ input, select, textarea {
 	
 	.wrapper {
 		margin: 0 auto;
-		width: 85%;
+		width: 78%;
 	}
 
-	/* Sticky Header */
+	.who-we-are-container .wrapper1 {
+		margin: 0 auto;
+		width: 78%;
+		display: flex;
+		align-self: center;
+		margin-top: 10%;
+	}
+
+
+	/* ALL NAV BARS STICKY AND NON-STICKY */
+	
+	/*Who We Are Intersite Nav Bar*/
+	
+	
+	@media (max-width: 600px) {
+		
+		.nav {
+			position: relative;
+			margin: 0;
+		}
+
+		.nav ul li { 
+			margin: 10px;
+		}
+		.nav ul li a {
+			font-size: 8px;
+		}
+
+		.nav-sticky {
+			position: relative;
+			margin: 0;
+		}
+
+
+		.nav-sticky ul li {
+			margin: 10px;
+			
+		}
+
+		.nav-sticky ul li a {
+			font-size: 8px;
+		}
+	
+	}
 	
 	nav {
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
-		font-size: 21px;
+		font-size: 20px;
 		z-index: 6;
 		width: 100%;
 		display: flex; 
@@ -8662,7 +8709,7 @@ input, select, textarea {
 		text-decoration: none;
 		display: inline;
 		position: relative;
-		margin: 30px 0px 0px 60px;
+		margin: 30px 0px 30px 60px;
 		font-size: 26px;
 		color: white;
 	}
@@ -8676,7 +8723,7 @@ input, select, textarea {
 
 	nav ul li {
 		list-style: none;
-		margin: 30px 60px 0px 0px;
+		margin: 30px 60px 30px 0px;
 		position: relative;
 	}
 
@@ -8687,11 +8734,11 @@ input, select, textarea {
 		color: white;
 	}
 
-
+	/* Who We Are Sticky Pull Down Nav Bar */
 
 	.nav-sticky {
 		left: 0;
-		font-size: 21px;
+		font-size: 20px;
 		position: fixed;
 		top: 0px;
 		z-index: 2;
@@ -8719,7 +8766,7 @@ input, select, textarea {
 		display: block;
 		text-decoration: none;
 		position: relative;
-		color: grey;
+		color: #ACACAC;
 	}
 
 	.nav-sticky .chp-sticky {
@@ -8733,28 +8780,141 @@ input, select, textarea {
 		font-weight: bold;
 	}
 
-
-	/* Who We Are */
 	
-	/* WWA Containers */
+	/* For Constructors Non-Sticky Intersite Nav Bar*/ 
 
+	.constructors-nonsticky1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 20px;
+		z-index: 6;
+		width: 100%;
+		display: flex; 
+		justify-content: space-between;
+	}
 
-	/* About Us Content/Headers */
-	
-	.who-we-are-container {
-		height: 500px;
-		background-color: #2C7BAC;
+	.constructors-nonsticky1 ul {
 		display: flex;
-		z-index: 3;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
+		margin: 0;
+	}
+	.constructors-nonsticky1 ul li{
+		list-style: none;
+		margin: 30px 60px 30px 0px;
+		position: relative;
+	}
+	.constructors-nonsticky1 ul li a {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		color: #ACACAC;
+	}
+	.constructors-nonsticky1 ul li a:focus {
+		background-color: red;
+	}
+
+	.construction-ul li a{
+		color: #2C7BAC;
+	}
+
+	/*For Constructors Page Non-Sticky Blue Nav Bar*/
+
+	.constructors-nonsticky2 {
+		left: 0;
+		top: 100px;
+		font-size: 21px;
+		position: absolute;
+		z-index: 50;
+		width: 100%;
+		display: flex; 
+		justify-content: space-around;
+		background-color: #2C7BAC;
+	}
+
+	.constructors-nonsticky2 ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 10px 0;
+		width: 100%;
+	}
+
+
+	.constructors-nonsticky2 ul li {
+		list-style: none;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.constructors-nonsticky2 ul li a {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		color: white;
+	}
+
+
+	/* For Constructors Page Sticky Blue Nav Bar */
+
+	.constructors-sticky {
+		left: 0;
+		font-size: 21px;
+		position: fixed;
+		top: 0px;
+		z-index: 2;
+		width: 100%;
+		display: flex; 
+		justify-content: space-around;
+		background-color: #2C7BAC;
+	}
+
+	.constructors-sticky ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 10px 0;
+		width: 100%;
+	}
+
+	.constructors-sticky ul li {
+		list-style: none;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.constructors-sticky ul li a {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		color: white;
+	}
+
+
+
+	/* Who We Are */
+
+	/* Who We Are Content/Headers */
+	
+	.who-we-are-container {
+		height: 700px;
+		background-image: url(../../images/bluebackground.png);
+		background-image: center;
+		background-image: no-repeat;
+		justify-content: center;
+		align-items: center;
 	}
 	.who-we-are-content {
 		text-align: left;
-		width: 85%;
+		height: 200px;		
 		color: white;
-		font-size: 45px;
+		width: 1100px;
+		font-size: 35px;
 
 	}
 
@@ -8784,8 +8944,13 @@ input, select, textarea {
 		font-weight: bold;
 	}
 
+	.wwalogo {
+		height: 160px;
+		margin-right: 60px;
+	}
+
 	
-	/* About Us Pictures */
+	/* Who We Are Meet the Team Pictures */
 
 	.first-row {
 		display: grid;
@@ -8947,7 +9112,7 @@ input, select, textarea {
 */
 
 
-/* AU Media Queries */
+/* WWA Media Queries */
 
 @media (max-width: 600px) {
 	.meet-the-team {
@@ -8958,7 +9123,7 @@ input, select, textarea {
 		margin-top: 30px;
 	}
 	.how-we-started-header {
-		margin: 0 auto;
+		margin: 50px auto 0;
 		font-size: 30px;
 	}
 	
@@ -8967,21 +9132,118 @@ input, select, textarea {
 		font-size: 20px;
 	}
 
-	nav ul li {
-		margin: 10px 25px 10px 0px;
-		padding: 0px;
-		font-size: 18px;
-	}
-	nav ul li:first-child {
-		margin: 10px 35px 10px 0px;
-	}
-
 	.who-we-are-container {
-		height: 300px;
+		height: 250px;
 	}
 	.who-we-are-content {
-		font-size: 20px;
+		font-size: 12px;
 	}
+
+	.wwalogo {
+		height: 90px;
+		margin-right: 20px;
+	}
+}
+
+
+/* For Constructors Page */
+
+.constructors-container { 
+	background-image: url(../../images/construction/construction-page-background.png);
+	background-position: center;
+	background-image: no-repeat;	
+	height: 600px;
+	background-size: contain;
+	margin-top: 152px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.constructors-container > h1 {
+	margin: 0px 0px 20px 50px;
+	color: white;
+}
+.constructors-container > p {
+	margin: 0px 0px 100px 50px;
+	color: white;
+}
+.step1 {
+	color: #2C7BAC;
+	font-size: 50px;
+	margin: 200px 0px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.threesteps {
+	font-size: 60px;
+	color: #242323;
+	text-align: left;
+	font-weight: bold;
+}
+
+.step2 {
+	color: #2C7BAC;
+	font-size: 50px;
+	margin: 200px 0px 100px 0px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.construction-titles {
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px auto;
+	padding: 0px 0px 0px 0px;
+}
+
+.trouble-tips {
+	display: flex;
+	width: 77%;
+	margin: 0 auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.tip-captions {
+	margin-bottom: 20px;
+	color: #4B4B4B;
+}
+
+.defect-report {
+	background-color: #4B4B4B;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	padding: 50px 0px;
+}
+
+
+.defect-report {
+	color: white;
+	font-size: 20px;
+}
+
+.defect-report-title {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.defect-report-steps {
+	font-size: 25px;
+	width: 45%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.step3 {
+	color: #2C7BAC;
+	font-size: 50px;
+	margin: 200px 0px 100px 0px;
+	text-align: left;
+	font-weight: bold;
 }
 
 /* Statistics Page */

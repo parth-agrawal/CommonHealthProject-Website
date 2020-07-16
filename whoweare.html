@@ -7,26 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        
-
     </head>
 
 <!--sticky header-->
 <body>
-    <nav class="nav">
-        <a href="index.html" class="chp">The CommonHealth Project</a>
-        <ul>
-            <li><a href="whatwedo.html">What We Do</a></li>
-            <li><a href="whoweare.html">Who We Are</a></li>
-            <li><a href="Construction.html">For Constructors</a></li>
-            <li><a href="requestshields.html">Request Shields</a></li>
-        </ul>
-    </nav>
+    
      
     <!-- About Us Header -->
         <div class="who-we-are-container">
-            <div class="who-we-are-content">We are a collaborative, community-based team protecting frontline healthcare workers by solving the PPE shortage.</div>  
-            <h3 style="display: none; color: red;">Memes are awesome and amazing</h3>     
+            <nav class="nav">
+                <a href="index.html" class="chp">The CommonHealth Project</a>
+                <ul>
+                    <li><a href="whatwedo.html">What We Do</a></li>
+                    <li><a href="whoweare.html">Who We Are</a></li>
+                    <li><a href="Construction.html">For Constructors</a></li>
+                    <li><a href="requestshields.html">Request Shields</a></li>
+                </ul>
+            </nav>
+            <div class="wrapper1">
+                <div><img src="images/whoweare/wwalogo.png" class="wwalogo"></div>
+                <div class="who-we-are-content">We are a collaborative, community-based team protecting frontline healthcare workers by solving the PPE shortage.</div>  
+            </div>
         </div>
         <div class="nav-sticky">
             <a href="index.html" class="chp-sticky">The CommonHealth Project</a>
@@ -177,28 +178,72 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="assets/js/jquery.navbar.js"></script>
-<!-- <script>
-// Jquery for Sticky Nav Bar
+    <script>
+   
+   $(document).ready(function () {
+        // Sticky Nav Bar Functionality
         $(".nav-sticky").hide();
-        $(window).scroll(function() {
-        if ($(window).scrollTop() > 420) {
-            $(".nav-sticky").css('z-index', '-1').slideDown(50);
-        } else {
-            $(".nav-sticky").slideUp(10);
-        }
-        if ($(window).scrollTop() > 500) {
-            $(".nav-sticky").css("z-index", "2"); 
-        }
-        if ($(window).scrollTop() > 600) {
-            $(".nav-sticky").css('background-color', 'white');
-        } else {
-            $(".nav-sticky").css('background-color', 'transparent');
-        }
-        })
+       
+        
+        // Sticky Nav Bar Responsiveness
+        $(window).scroll(function () {
+            if ($(window).width() <=600) {
+            $(".nav-sticky ul li").css({"margin": "10px"});
+            } else {
+                $(".nav-sticky ul li").css({"margin": ""})
+            }
+            if ($(window).width() <=600) {
+                if ($(window).scrollTop() > 300) {
+                    $(".nav-sticky").css('z-index', '-1').slideDown(50);
+                } else {
+                    $(".nav-sticky").slideUp(10);
+                }
+                if ($(window).scrollTop() > 200) {
+                    $(".nav-sticky").css("z-index", "2"); 
+                }
+                if ($(window).scrollTop() > 300) {
+                    $(".nav-sticky").css({'background-color': 'white'});
+                    $(".nav-sticky ul").css("padding: 0px");
+                } else {
+                    $(".nav-sticky").css({'background-color': 'transparent'});
+                    $(".nav-sticky ul").css({"padding": ""});
+                }
+            } else {
+                if ($(window).scrollTop() > 620) {
+                    $(".nav-sticky").css('z-index', '-1').slideDown(50);
+                } else {
+                    $(".nav-sticky").slideUp(10);
+                }
+                if ($(window).scrollTop() > 700) {
+                    $(".nav-sticky").css("z-index", "2"); 
+                }
+                if ($(window).scrollTop() > 720) {
+                    $(".nav-sticky").css('background-color', 'white');
+                } else {
+                    $(".nav-sticky").css('background-color', 'transparent');
+                }
+            }   
+        });
 
-</script>
- -->
-
+        $(window).resize(function () {
+            if ($(window).width() <= 600) {
+                $(".chp").text("CHP");
+                $(".chp").css({"font-size": "10px", "margin": "10px"});
+            } else {
+                $(".chp").text("The CommonHealth Project");
+                $(".chp").css({"font-size":"", "margin": ""});
+            }
+        });
+        $(window).resize(function () {
+            if ($(window).width() <= 600) {
+                $(".chp-sticky").text("CHP");
+                $(".chp-sticky").css({"font-size": "10px", "margin": "10px"});
+            } else {
+                $(".chp-sticky ").text("The CommonHealth Project");
+                $(".chp-sticky").css({"font-size":"", "margin": ""});
+            }
+        });
+   });
+    </script>
 </body>
 </html>
