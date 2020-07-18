@@ -9358,8 +9358,51 @@ input, select, textarea {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	text-align: center;
 }
+/* Style all font awesome icons */
+.fa {
+	padding: 1%;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+  }
+ul.social-media-list {
+    list-style-type: none;
+    margin: 1%;
+	padding: 0;
+}
+
+ul.social-media-list li{
+	/*display: inline-block;*/
+	
+
+	display:table-cell;
+   
+}
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
   
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-instagram {
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-linkedin {
+	color: white;
+  } 
+
+    /* Email */
+	.fa-envelope {
+		color: white;		
+	  } 
 
 /* for the request page */
 .post-container {
