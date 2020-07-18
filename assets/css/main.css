@@ -3596,7 +3596,7 @@ input, select, textarea {
 				}
 
 				.banner.style1.fullscreen .image {
-					height: 50vh;
+					/*height: 50vh;*/
 				}
 
 			}
@@ -3640,6 +3640,7 @@ input, select, textarea {
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
+			height: 100%;
 		}
 
 		.banner.style1.image-position-right .image img {
@@ -9344,4 +9345,43 @@ input, select, textarea {
                 font-size: 18px; 
                 top: 50px; 
                 left: 27%; 
-                color: white; 
+				color: white; }
+				
+/*footer */
+
+.footer {
+	padding: 25px 0;
+	font-size: 85%;
+	background-color: #2F2F2F;
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+  
+
+/* for the request page */
+.post-container {
+    margin: 20px 20px 10% 0;  
+    overflow: auto
+}
+.post-thumb {
+    float: left;
+}
+.post-thumb img {
+	display: inline-block;
+	float: left;
+	padding: 10% 10% 10% 10%;
+	max-width: 80%;
+    height:auto;
+}
+.post-content {
+	margin-left: 210px;
+	margin-top: 8%;
+}
+.post-title {
+    font-weight: bold;
+	font-size: 200%
+	padding: 30% 10% 10% 10%;
+}
