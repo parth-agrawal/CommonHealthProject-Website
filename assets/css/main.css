@@ -9055,3 +9055,31 @@ input, select, textarea {
 		margin-top: 0px;
 	}
 }
+
+
+/*hero*/
+.hero-image {
+	background-image: url("CHPHomepageHero.png");
+  	height: 50%; 
+  	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+  }
+    .hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: whitesmoke;
+  }
+
+            /* designing title and tag line */ 
+            .logo { 
+                text-align:center; 
+                position: absolute; 
+                font-size: 18px; 
+                top: 50px; 
+                left: 27%; 
+                color: white; 
