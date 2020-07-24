@@ -8813,7 +8813,7 @@ input, select, textarea {
 		color: #ACACAC;
 	}
 	.constructors-nonsticky1 ul li a:focus {
-		background-color: red;
+		background-color: whitesmoke;
 	}
 
 	.construction-ul li a{
@@ -9369,41 +9369,66 @@ input, select, textarea {
 /*******Homepage white bg********/				
 .homepage-contents {
 	background-color: white;
-	margin: 25% 15% 15% 15%;  
+	margin: 15% 15% 15% 10%;  
     overflow: auto
 }				
 
 .HP-thumb {
-    float: right;
+	float: right;
+	max-width: 70%;
 }
 .HP-thumb img {
 	display: inline-block;
-	float: left;
-	padding: 20% 10% 10% 3%;
-	width: 40%;
-    height:auto;
+	float: right;
+	padding: 10% 15% 10% 3%;
+	
+    height: auto;
 }
 .HP-content {
-	/* margin-left: 210px;
-	margin-top: 8%; */
-	font-size: 1.3em;
+	font-size: 1.1em;
+	padding-right: 15%;
 }
 .HP-title {
     font-weight: bold;
-	font-size: 200%
-	padding: 30% 10% 10% 10%; 
+	font-size: 200%; 
+}
+/*homepage stat banner*/
+.HP-banner {
+	height: auto;
+	max-width: 1920px;
+	background-color: #2377AA;
+}
+.HP-banner H1 {
+	color: white;
+	font-size: 8rem;
+	font-style: normal;
+	font-weight: normal;
 }
 
+.HP-GI {
+	background-image: url(/images/homepage/Lines-01.png);
+	background-repeat: no-repeat;
+	margin: 5%, 7%, 10%, 7%; 
+}
+
+.HP-GI img {
+	height: auto;
+	max-width: 60%;
+
+}
 
 /*footer */
 
 .footer {
-	padding: 5% 0;
+	padding: 5% 0% 5% 0%;
 	font-size: 85%;
 	background-color: #2F2F2F;
 	background-size: contain, cover;
 	z-index: -1;
 	text-align: center;
+	height: 10%;
+	max-width: 100%;
+	
 }
 /* Style all font awesome icons */
 .fa {
