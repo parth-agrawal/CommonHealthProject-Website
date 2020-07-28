@@ -2457,9 +2457,6 @@ input, select, textarea {
 			content: '\f00c';
 		}
 
-	input[type="checkbox"] + label:before {
-	}
-
 	input[type="radio"] + label:before {
 		border-radius: 100%;
 	}
@@ -3595,7 +3592,7 @@ input, select, textarea {
 				}
 
 				.banner.style1.fullscreen .image {
-					height: 50vh;
+					/*height: 50vh;*/
 				}
 
 			}
@@ -3639,6 +3636,7 @@ input, select, textarea {
 			-webkit-object-position: left;
 			-ms-object-position: left;
 			object-position: left;
+			height: 100%;
 		}
 
 		.banner.style1.image-position-right .image img {
@@ -8796,7 +8794,10 @@ input, select, textarea {
 		position: relative;
 		color: #ACACAC;
 		font-weight: bolder;
-		font-size: 1em;		
+		font-size: 1em;
+	}
+	.constructors-nonsticky1 ul li a:focus {
+		background-color: whitesmoke;
 	}
 
 	.constructors-nonsticky1 .chp {
@@ -9381,4 +9382,186 @@ input, select, textarea {
 	.donation-centers-header {
 		margin-top: 0px;
 	}
+}
+
+
+/*hero*/
+.hero-image {
+	background-image: url("CHPHomepageHero.png");
+	height: 10%; 
+	object-fit: contain;
+	overflow: hidden;
+  	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-bottom: -10%;
+  }
+    .hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: whitesmoke;
+  }
+
+.hero-image-properities { 
+	width: 100%; 
+	height: 20%;
+	background-size: contain;
+	object-fit: contain;
+}   
+/* designing title and tag line */ 
+.logo { 
+	text-align:center; 
+	position: absolute; 
+	font-size: 18px; 
+	top: 50px; 
+	left: 27%; 
+	color: white; 
+} 
+
+            /* designing title and tag line */ 
+            .logo { 
+                text-align:center; 
+                position: absolute; 
+                font-size: 18px; 
+                top: 50px; 
+                left: 27%; 
+				color: white; }
+
+/*******Homepage white bg********/				
+.homepage-contents {
+	background-color: white;
+	margin: 15% 15% 15% 10%;  
+    overflow: auto
+}				
+
+.HP-thumb {
+	float: right;
+	max-width: 70%;
+}
+.HP-thumb img {
+	display: inline-block;
+	float: right;
+	padding: 10% 15% 10% 3%;
+	
+    height: auto;
+}
+.HP-content {
+	font-size: 1.1em;
+	padding-right: 15%;
+}
+.HP-title {
+    font-weight: bold;
+	font-size: 200%; 
+}
+/*homepage stat banner*/
+.HP-banner {
+	height: auto;
+	max-width: 1920px;
+	background-color: #2377AA;
+}
+.HP-banner H1 {
+	color: white;
+	font-size: 8rem;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.HP-GI {
+	background-image: url(/images/homepage/Lines-01.png);
+	background-repeat: no-repeat;
+	margin: 5%, 7%, 10%, 7%; 
+}
+
+.HP-GI img {
+	height: auto;
+	max-width: 60%;
+
+}
+
+/*footer */
+
+.footer {
+	padding: 5% 0% 5% 0%;
+	font-size: 85%;
+	background-color: #2F2F2F;
+	background-size: contain, cover;
+	z-index: -1;
+	text-align: center;
+	height: 10%;
+	max-width: 100%;
+	
+}
+/* Style all font awesome icons */
+.fa {
+	padding: 1%;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	
+  }
+ul.social-media-list {
+    list-style-type: none;
+    margin: 1%;
+	padding: 0;
+}
+
+ul.social-media-list li{
+	/*display: inline-block;*/
+	
+
+	display:table-cell;
+   
+}
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-instagram {
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-linkedin {
+	color: white;
+	
+  } 
+
+    /* Email */
+	.fa-envelope {
+		color: white;		
+	  } 
+
+/* for the request page */
+.post-container {
+    margin: 20px 20px 10% 0;  
+    overflow: auto
+}
+.post-thumb {
+    float: left;
+}
+.post-thumb img {
+	display: inline-block;
+	float: left;
+	padding: 10% 10% 10% 10%;
+	max-width: 80%;
+    height:auto;
+}
+.post-content {
+	margin-left: 210px;
+	margin-top: 8%;
+}
+.post-title {
+    font-weight: bold;
+	font-size: 200%;
+	padding: 30% 10% 10% 10%;
 }
