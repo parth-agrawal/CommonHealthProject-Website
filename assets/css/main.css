@@ -2438,18 +2438,18 @@ input, select, textarea {
 
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
-				border-radius: 4px;
-				border: solid 1px;
+				border: solid 2.2px #2377AA;
 				content: '';
 				display: inline-block;
 				font-size: 0.8rem;
-				height: 1.65rem;
-				left: 0;
-				line-height: 1.65rem;
+				height: 1.8rem;
+				left: -1.8em;
+				line-height: 2rem;
 				position: absolute;
 				text-align: center;
-				top: 0;
-				width: 1.65rem;
+				top: -3px;
+				width: 1.8rem;
+				vertical-align: center;
 			}
 
 		input[type="checkbox"]:checked + label:before,
@@ -2458,7 +2458,6 @@ input, select, textarea {
 		}
 
 	input[type="checkbox"] + label:before {
-		border-radius: 4px;
 	}
 
 	input[type="radio"] + label:before {
@@ -2524,7 +2523,7 @@ input, select, textarea {
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: rgba(0, 0, 0, 0.2);
+			border-color: #2377AA;
 		}
 
 	input[type="checkbox"]:checked + label:before,
@@ -2883,7 +2882,7 @@ input, select, textarea {
 
 		}
 
-/* Icons */
+/*Icons*/
 
 	ul.icons {
 		cursor: default;
@@ -7281,21 +7280,7 @@ input, select, textarea {
 
 	}
 
-	.construction-instructions-section {
-		text-align: center;
-	}
-
-	.construction-video {
-		display: block;
-		margin: 0 auto;
-	}
-
-	@media (max-width: 700px) {
-		.construction-video {
-			width: 350px;
-		}
-	}
-
+	
 
 
 /* Wrapper (style2) */
@@ -8647,6 +8632,7 @@ input, select, textarea {
 	.wrapper {
 		margin: 0 auto;
 		width: 78%;
+		color: #4B4B4B;
 	}
 
 	.who-we-are-container .wrapper1 {
@@ -8661,7 +8647,6 @@ input, select, textarea {
 	/* ALL NAV BARS STICKY AND NON-STICKY */
 	
 	/*Who We Are Intersite Nav Bar*/
-	
 	
 	@media (max-width: 600px) {
 		
@@ -8694,7 +8679,7 @@ input, select, textarea {
 	
 	}
 	
-	nav {
+	.nav {
 		position: relative;
 		top: 0;
 		left: 0;
@@ -8705,7 +8690,7 @@ input, select, textarea {
 		justify-content: space-between;
 	}
 
-	nav .chp {
+	.nav .chp {
 		text-decoration: none;
 		display: inline;
 		position: relative;
@@ -8714,20 +8699,20 @@ input, select, textarea {
 		color: white;
 	}
 
-	nav ul {
+	.nav ul {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: 0;
 	}
 
-	nav ul li {
+	.nav ul li {
 		list-style: none;
 		margin: 30px 60px 30px 0px;
 		position: relative;
 	}
 
-	nav ul li a {
+	.nav ul li a {
 		display: block;
 		text-decoration: none;
 		position: relative;
@@ -9164,86 +9149,101 @@ input, select, textarea {
 	margin: 0px 0px 20px 50px;
 	color: white;
 }
+
 .constructors-container > p {
 	margin: 0px 0px 100px 50px;
 	color: white;
 }
-.step1 {
-	color: #2C7BAC;
-	font-size: 50px;
-	margin: 200px 0px;
-	text-align: left;
-	font-weight: bold;
+
+.step1-container, .step2-container, .step3-container {
+	text-align: center;
 }
 
-.threesteps {
-	font-size: 60px;
-	color: #242323;
-	text-align: left;
+.step1 {
+	color: #2C7BAC;
+	font-size: 2em;
+	margin: 2.65em auto 0.74em auto;
 	font-weight: bold;
 }
 
 .step2 {
 	color: #2C7BAC;
-	font-size: 50px;
-	margin: 200px 0px 100px 0px;
-	text-align: right;
+	font-size: 2em;
+	margin: 0 auto;
 	font-weight: bold;
 }
 
-.construction-titles {
-	font-size: 30px;
-	font-weight: bold;
-	margin: 20px auto;
-	padding: 0px 0px 0px 0px;
+.step1-container :nth-child(2) {
+	font-size: 1.5em;
+	margin: 1em auto;
+	padding: 0px 0px 0px 0px;	
+}
+
+
+
+.instructional-pdf-p {
+	margin: 2.35em 0em 0em 0em;
+	font-size: 1.5em;
+}
+
+.trouble-p {
+	font-size: 1.5em; 
+	margin: 2.33em auto;
+	text-align: center;
 }
 
 .trouble-tips {
 	display: flex;
-	width: 77%;
+	width: 100%;
 	margin: 0 auto;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
-.tip-captions {
-	margin-bottom: 20px;
+
+.caption1 {
+	font-size: 1em;
+	margin: 0em 0em 1.28em 0em;
 	color: #4B4B4B;
 }
 
-.defect-report {
-	background-color: #4B4B4B;
-	left: 0;
-	right: 0;
-	width: 100%;
-	text-align: center;
-	padding: 50px 0px;
+.caption2 {
+	font-size: 0.75em;
+
 }
 
-
-.defect-report {
-	color: white;
-	font-size: 20px;
+.trouble-videos {
+	margin: 0;
+	padding: 0;
 }
 
-.defect-report-title {
-	font-size: 50px;
-	font-weight: bold;
-}
-
-.defect-report-steps {
-	font-size: 25px;
-	width: 45%;
-	margin: 0 auto;
-	text-align: left;
-}
 
 .step3 {
 	color: #2C7BAC;
-	font-size: 50px;
-	margin: 200px 0px 100px 0px;
-	text-align: left;
+	font-size: 2em;
+	margin: 2.65em 0em 0em 0em;
 	font-weight: bold;
+}
+
+
+.construction-video {
+	display: block;
+	margin: 0 auto;
+	border-radius: 35px;
+}
+
+
+
+.construction-checklist li {
+	list-style: none;
+	text-align: left;
+	margin: 1.7em 0px 0em 0px;
+}
+
+@media (max-width: 700px) {
+	.construction-video {
+		width: 350px;
+	}
 }
 
 /* Statistics Page */
