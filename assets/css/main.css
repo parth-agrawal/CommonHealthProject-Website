@@ -2441,7 +2441,7 @@ input, select, textarea {
 				border: solid 2.2px #2377AA;
 				content: '';
 				display: inline-block;
-				font-size: 0.8rem;
+				font-size: 1em;
 				height: 1.8rem;
 				left: -1.8em;
 				line-height: 2rem;
@@ -8772,11 +8772,11 @@ input, select, textarea {
 		position: absolute;
 		top: 0;
 		left: 0;
-		font-size: 20px;
 		z-index: 6;
 		width: 100%;
 		display: flex; 
 		justify-content: space-between;
+		height: 80px;
 	}
 
 	.constructors-nonsticky1 ul {
@@ -8787,7 +8787,7 @@ input, select, textarea {
 	}
 	.constructors-nonsticky1 ul li{
 		list-style: none;
-		margin: 30px 60px 30px 0px;
+		margin: 0px 60px 0px 0px;
 		position: relative;
 	}
 	.constructors-nonsticky1 ul li a {
@@ -8795,21 +8795,25 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		color: #ACACAC;
-	}
-	.constructors-nonsticky1 ul li a:focus {
-		background-color: red;
+		font-weight: bolder;
+		font-size: 1em;		
 	}
 
-	.construction-ul li a{
-		color: #2C7BAC;
+	.constructors-nonsticky1 .chp {
+		text-decoration: none;
+		color: #2377AA;
+		font-size: 1.75em;
+		position: relative;
+		left: 2em;
+		top: 0.35em;
 	}
+
 
 	/*For Constructors Page Non-Sticky Blue Nav Bar*/
 
 	.constructors-nonsticky2 {
 		left: 0;
-		top: 100px;
-		font-size: 21px;
+		top: 80px;
 		position: absolute;
 		z-index: 50;
 		width: 100%;
@@ -8823,7 +8827,7 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 		margin: 0;
-		padding: 10px 0;
+		padding: 14px 0;
 		width: 100%;
 	}
 
@@ -8831,7 +8835,7 @@ input, select, textarea {
 	.constructors-nonsticky2 ul li {
 		list-style: none;
 		position: relative;
-		width: 100%;
+		width: 25%;
 		text-align: center;
 	}
 
@@ -8840,6 +8844,9 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		color: white;
+		font-weight: bolder;
+		font-size: 1em;
+
 	}
 
 
@@ -8862,7 +8869,7 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 		margin: 0;
-		padding: 10px 0;
+		padding: 14px 0;
 		width: 100%;
 	}
 
@@ -9135,24 +9142,60 @@ input, select, textarea {
 
 .constructors-container { 
 	background-image: url(../../images/construction/construction-page-background.png);
-	background-position: center;
-	background-image: no-repeat;	
-	height: 600px;
+	background-position: top;
+	background-image: no-repeat;
 	background-size: contain;
-	margin-top: 152px;
+	height: 618px;
+	width: 100%;
+	margin-top: 139px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
+	align-content: center;
 }
 
-.constructors-container > h1 {
-	margin: 0px 0px 20px 50px;
+.hello-constructors {
 	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	letter-spacing: 0.01em;
 }
 
-.constructors-container > p {
-	margin: 0px 0px 100px 50px;
+.hello-constructors-caption {
 	color: white;
+	font-size: 1em;
+	letter-spacing: 0.03em;
+
+}
+.constructors-container > div {
+	color: white;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.three-steps-container {
+	background-color:#2377AA;
+	height: 211px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.three-steps-container .before-you-start{
+	color: white;
+	width: 286px;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0em 174px 0em 139px;
+}
+
+.three-steps-container .three-steps {
+	color: white;
+	font-size: 1.5em;
+	margin: 0em 139px 0em 0em;
+	font-weight: bolder;
 }
 
 .step1-container, .step2-container, .step3-container {
@@ -9162,53 +9205,81 @@ input, select, textarea {
 .step1 {
 	color: #2C7BAC;
 	font-size: 2em;
-	margin: 2.65em auto 0.74em auto;
+	margin: 151px auto 0.74em auto;
 	font-weight: bold;
 }
 
 .step2 {
 	color: #2C7BAC;
 	font-size: 2em;
-	margin: 0 auto;
+	margin: 177px auto 0.95em auto;
 	font-weight: bold;
 }
 
+.step3 {
+	color: #2C7BAC;
+	font-size: 2em;
+	margin: 5em 0em 0em 0em;
+	font-weight: bold;
+}
+
+.step3-container button {
+	margin-top: 2.5em;
+}
 .step1-container :nth-child(2) {
 	font-size: 1.5em;
 	margin: 1em auto;
 	padding: 0px 0px 0px 0px;	
 }
 
+.step2-container {
+	margin-bottom: 1.95em;
+}
 
-
+.step1-container button {
+	margin-top: 26px;
+	width: 18em;
+}
 .instructional-pdf-p {
-	margin: 2.35em 0em 0em 0em;
+	margin: 111px 0em 0em 0em;
 	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.construction-button {
+	color:#2377AA !important; 
+	border: 2px solid #2377AA !important; 
+	text-decoration: none;
+	font-family: inherit;
+	letter-spacing: 0;
 }
 
 .trouble-p {
 	font-size: 1.5em; 
-	margin: 2.33em auto;
+	margin: 110px auto 26px auto;
 	text-align: center;
+	font-weight: bolder;
 }
+
 
 .trouble-tips {
 	display: flex;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	justify-content: space-between;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
-
 
 .caption1 {
 	font-size: 1em;
 	margin: 0em 0em 1.28em 0em;
 	color: #4B4B4B;
+	font-weight: bolder;
 }
 
 .caption2 {
 	font-size: 0.75em;
+	font-weight: bolder;
 
 }
 
@@ -9218,21 +9289,15 @@ input, select, textarea {
 }
 
 
-.step3 {
-	color: #2C7BAC;
-	font-size: 2em;
-	margin: 2.65em 0em 0em 0em;
-	font-weight: bold;
-}
-
-
 .construction-video {
 	display: block;
 	margin: 0 auto;
 	border-radius: 35px;
 }
 
-
+.construction-checklist {
+	margin-left: 100px;
+}
 
 .construction-checklist li {
 	list-style: none;
