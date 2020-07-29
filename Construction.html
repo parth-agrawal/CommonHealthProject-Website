@@ -3,7 +3,7 @@
 Constructed by Lorrin Stone.
 Hi inspectors :) 
 -->
-<html>
+<html style="scroll-behavior: smooth">
 	<link rel="shortcut icon" href="images/logo-color.png" >
 	<head>
 		<title>The CommonHealth Project</title>
@@ -14,8 +14,8 @@ Hi inspectors :)
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
     <body class="is-preload">
-        <nav class="constructors-nonsticky1" style="background-color: white;">
-            <a href="index.html" class="chp" style="color: #2C7BAC">The CommonHealth Project</a>
+        <nav class="constructors-nonsticky1" id="constructionstart">
+            <a href="index.html" class="chp">The <b style="color: #2377AA; font-weight: bold;">CommonHealth</b> Project</a>
             <ul class="construction-ul">
                 <li><a href="whatwedo.html">What We Do</a></li>
                 <li><a href="whoweare.html">Who We Are</a></li>
@@ -25,136 +25,95 @@ Hi inspectors :)
         </nav>
         <div class="constructors-nonsticky2">
             <ul>
-                <li><a href="#ConfirmationForm">Confirmation Form</a></li>
-                <li><a href="#ConstructShields">Construct the Shields</a></li>
-                <li><a href="#DefectReport">Defect Report</a></li>
-                <li><a href="#QualityChecklist">Quality Checklist</a></li>
+                <li><a href="#constructshields">1. Construct Shields</a></li>
+                <li><a href="#qualitychecklist">2. Quality Checklist</a></li>
+                <li><a href="#shieldreportform">3. Shield Report Form</a></li>
             </ul>                
         </div>
         <!--sticky header-->
         <div class="constructors-sticky">
             <ul>
-                <li><a href="#ConfirmationForm">Confirmation Form</a></li>
-                <li><a href="#ConstructShields">Construct the Shields</a></li>
-                <li><a href="#DefectReport">Defect Report</a></li>
-                <li><a href="#QualityChecklist">Quality Checklist</a></li>
+                <li><a href="#constructshields">1. Construct Shields</a></li>
+                <li><a href="#qualitychecklist">2. Quality Checklist</a></li>
+                <li><a href="#shieldreportform">3. Shield Report Form</a></li>
+                <li><a href="#constructionstart" style="font-weight: bold;">Return To Top</a></li>
             </ul>                
         </div>
-        <div class="constructors-container">
-            <h1>Hello Constructors</h1>
-            <p>This is the place to be to construct face shields.</p>
+        <div class="constructors-container"> 
+            <div>
+                <h1 class="hello-constructors">Hello Constructors</h1>
+                <p class="hello-constructors-caption">This is the place to be to construct face shields.</p>
+            </div>  
+        </div>
+        <div class="three-steps-container"> 
+            <div class="before-you-start">Before You Start</div>
+            <div class="three-steps">Wash Hands. Wear Face Mask. Wear Gloves.</div>
         </div>
       <!--Construction Instructions section-->
     <div class="wrapper">
-        <section id="ConfirmationForm">
-            <br>
-        <section class="construction-instructions-section">
-            <div>
-                <div class="step1">Step 1: Confirmation Form</div>
-            </div>
-            <div class="threesteps">
-                Wash Hands 
-                <br>
-                Wear Fask Mask
-                <br>
-                Wear Gloves
-            </div>
-            <div id="ConstructShields" class="step2">Step 2: Construct Shields</div>
-            <p class="construction-titles">Check out this Face Shield Construction Tutorial</p>
+        <div style="height: 100px;" id="constructshields"></div>
+        <section class="step1-container">
+            <div class="step1">Step 1: Construct the Face Shields</div>
+            <p style="font-weight: bolder;">Check out this Face Shield Construction Tutorial</p>
             <ul class="actions">
             <!--Video updated 5/24-->
-                <iframe class="construction-video" width="560" height="315" src="https://www.youtube.com/embed/Pyt_wHThplo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="construction-video" width="630" height="355" src="https://www.youtube.com/embed/Pyt_wHThplo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </ul>
-            <p class="construction-titles">Or, check out this Instruction PDF</p>
-            <a  href="https://drive.google.com/file/d/19-9RsTWUFxtq_qHhpRXyoHe_HXboTLc_/view?usp=sharing" class="button" target="_blank">Instructions PDF</a>						
-            <p>Having Trouble? Use these tips!</p>
-            <!--Construction Tips-->
-            <div class=trouble-tips>
-                <div>
-                    <figcaption class="tip-captions">How do I separate the foam from the tape?</figcaption>
-                    <video width="400" height="250" controls>
+            <p class="instructional-pdf-p">Or, check out this Instructional PDF:</p>
+            <button class="construction-button"><a href="https://drive.google.com/file/d/19-9RsTWUFxtq_qHhpRXyoHe_HXboTLc_/view?usp=sharing">Instructional PDF</a></button>	
+            <p class="trouble-p">Having Trouble? Use these tips!</p>
+            <div class="trouble-tips">
+                <div class="trouble-videos"> 
+                    <figcaption class="caption1">How do I separate the foam from the tape?</figcaption>
+                    <video width="441" height="288" controls style="margin: 0; height: auto; border-radius: 22px;">
                         <source src="videos/foamvideo.mov" type="video/mov">
                         <source src="videos/foamvideo.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div>
-                    <figcaption class="tip-captions"> How do I attach the shield to the frame?</figcaption>
-                    <video width="400" height="250" controls>
+                <div class="trouble-videos" style="margin: 0;">
+                    <figcaption class="caption2"> How do I attach the shield to the frame?</figcaption>
+                    <video width="441" height="288" controls style="margin: 0.46em 0px 0px 0px; height: auto; border-radius: 22px;">
                         <source src="videos/attachment.mov" type="video/mov">
                         <source src="videos/attachment.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
         </section>
-    </section>
+
+        <div style="height: 100px;" id="qualitychecklist"></div>
+        <section class="step2-container">
+            <div class="step2">Step 2: Quality Checklist</div>
+            <ul class="construction-checklist">
+                <li>
+                    <input type="checkbox">
+                    <label>The serial number is placed on the SAME SIDE as the NJIT logo and on the top left of the white band</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>The foam is placed on the bottom backside of the band and the opposite side of the NJIT logo</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>The PET shield is placed on the same side as the NJIT logo and on top of both halves of the band</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>The black strap is weaved through only one side with 1" of slack</label>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <label>The tool is NOT returned in the bag</label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="step3-container" id="shieldreportform">
+            <div class="step3">Step 3: Shield Report Form</div>
+            <button class="construction-button"><a href="https://docs.google.com/forms/d/1AsJFmn0K614iB1OaSQFJ4-4_rewCxa6tD6Hs1DZ5VSM/edit?usp=drive_web">Shield Report Form</a></button>
+        </section>
     </div>
-        <!-- Defect Report -->
-            <div id="DefectReport" class="defect-report">
-                <p class="defect-report-title">Defect Report</p>
-                <p style="font-size: 30px;">Broken Shield? No problem, follow these steps:</p>
-                <br>
-                <div class="defect-report-steps">
-                    <p>1. Fill out the Defect Report Form below.</p>
-                    <p>2. Remove the broken shield from the kit and rewrite the updated serial range on the side of the kit.</p>
-                    <p>3. Place the broken and extra materials in a separate bag for pickup.</p>
-                </div>
-                <div class="wrapper style1 align-center">
-                    <a href="https://forms.gle/1u46gFDHi8tQ3PxU8" class="button fit">Faceshield Confirmation Form</a>
-                </div>
-            </div>          
-        <div class="wrapper">
-            <div id="QualityChecklist" class="step3">Step 3: Quality Checklist</div>
-
-            <!-- Construction Checklist -->
-            <!-- <section class="wrapper style1 align-center">
-                <div class="inner">
-                    <h2>Construction Checklist</h2>
-                    <div class="items style1 medium onscroll-fade-in">
-                        <section>
-                            <h3>One</h3>
-                            <p><span class="image left"><img src="images/construction/band-front.png" alt="" /></span>The serial number is placed on the SAME SIDE as the NJIT logo and on the top left of the white band.</p>
-                        </section>
-                        <section>
-                            <h3>Two</h3>
-                            <p><span class="image left"><img src="images/construction/band-back.png" alt="" /></span>The Foam is placed on the backside of the band and on the opposite side of the NJIT logo.</p>
-                        </section>
-                        <section>
-                            <h3>Three</h3>
-                            <p><span class="image left"><img src="images/construction/tabs.png" alt="" /></span>The punched tabs are punched out of the band on the same side as the NJIT logo and the serial number sticker.</p>
-                        </section>
-                        <section>
-                            <h3>Four</h3>
-                            <p><span class="image left"><img src="images/construction/front-shield.png" alt="" /></span>The PET shield is placed on the same side as the NJIT logo and on top of both halves of the band.</p>
-                        </section>
-                        <section>
-                            <h3>Five</h3>
-                            <p><span class="image left"><img src="images/construction/strap.png" alt="" /></span>The black strap is weaved through on only the side shown in the video so that the shield lays perfectly flat (provided instructions are for the medical professional receiving the shields).</p>
-                        </section>
-                        <section>
-                            <h3>Six</h3>
-                            <p><span style="width: 48%"class="image left"><img src="images/construction/final.png" alt="" /></span>The finished shield is flat and packed with the instructions.</p>
-                        </section>
-                        <section>
-                            <h3>Seven</h3>
-                            <p>The tool is NOT returned in the bag.</p>
-                        </section>
-                        <section>
-                            <h3>Eight</h3>
-                            <p>Serial numbers on shields match the kit range written on the bag. (If this is not the case, indicate that in the damages form)</p>
-                        </section>
-                        <section>
-                            <h3>Nine</h3>
-                            <p>10 shields are packed into an original kit bag with the serial number range.</p>
-                        </section>            
-                    </div>
-                </div>
-            </section> -->
-
-    
-    
-                <a href="https://forms.gle/eqiK1gt8bSUNvfMZA" class="button small">Faceshield Defects/Damages Form</a> </p>
-                
-
+               
+            
 
 <!-- Footer -->
 					<footer class="wrapper style1 align-center">
@@ -184,21 +143,31 @@ Hi inspectors :)
             <script src="assets/js/main.js"></script>
             <script>
                 //Sticky Nav Bar
+            $(document).ready(function() {
                 $(".constructors-sticky").hide();
-                        $(window).scroll(function() {
-                        if ($(window).scrollTop() > 700) {
-                            $(".constructors-sticky").css({'z-index': '-1'}).slideDown(1);
-                        } else {
-                            $(".constructors-sticky").slideUp(10);
-                        }
-                        if ($(window).scrollTop() > 760) {
-                            $(".constructors-sticky").css("z-index", "2"); 
-                        }
-                        if ($(window).scrollTop() > 700) {
-                        } else {
-                            $(".constructors-sticky").hide();
-                        }
-                        })
-                </script>
+                    $(window).scroll(function() {
+                    if ($(window).scrollTop() > 900) {
+                        $(".constructors-sticky").css({'z-index': '-1'}).slideDown(1);
+                    } else {
+                        $(".constructors-sticky").slideUp(10);
+                    }
+                    if ($(window).scrollTop() > 960) {
+                        $(".constructors-sticky").css("z-index", "2"); 
+                    }
+                    if ($(window).scrollTop() > 900) {
+                    } else {
+                        $(".constructors-sticky").hide();
+                    };
+                });
+
+                $(window).resize(function () {
+                    if ($(window).width() <= 600) {
+                        $(".constructors-nonsticky1 .chp").text("CHP");
+                    } else {
+                        $(".constructors-nonsticky1 .chp").text("The CommonHealth Project");
+                    }
+                });
+            });
+            </script>
 	</body>
 </html>
