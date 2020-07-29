@@ -9576,7 +9576,7 @@ input, select, textarea {
 	max-width: 70%;
 }
 .HP-thumb img {
-	display: inline-block;
+	/*display: inline-block;*/
 	float: right;
 	padding: 10% 15% 10% 3%;
 	
@@ -9589,32 +9589,6 @@ input, select, textarea {
 .HP-title {
     font-weight: bold;
 	font-size: 200%; 
-}
-/*homepage stat banner*/
-.HP-banner {
-	height: auto;
-	max-width: 1920px;
-	background-color: #2377AA;
-	display: grid;
-	grid-template-columns: 5fr 5fr 5fr;
-}
-.HP-banner H1 {
-	color: white;
-	font-size: 8rem;
-	font-style: normal;
-	font-weight: normal;
-	
-}
-
-.HP-GI {
-	background-image: url(/images/homepage/Lines-01.png);
-	background-repeat: no-repeat;
-	margin: 5%, 7%, 10%, 7%; 
-}
-
-.HP-GI img {
-	height: auto;
-	max-width: 60%;
 }
 
 
