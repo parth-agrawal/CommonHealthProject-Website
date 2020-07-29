@@ -263,15 +263,15 @@
                 $(".chp").css({"font-size":"", "margin": ""});
             }
         });
-        // $(window).resize(function () {
-        //     if ($(window).width() <= 600) {
-        //         $(".chp-sticky").text("CHP");
-        //         $(".chp-sticky").css({"font-size": "10px", "margin": "10px"});
-        //     } else {
-        //         $(".chp-sticky ").text("The CommonHealth Project");
-        //         $(".chp-sticky").css({"font-size":"", "margin": ""});
-        //     }
-        // });
+        $(window).resize(function () {
+            if ($(window).width() <= 600) {
+                $(".chp-sticky").text("CHP");
+                $(".chp-sticky").css({"font-size": "10px", "margin": "10px"});
+            } else {
+                $(".chp-sticky ").text("The CommonHealth Project");
+                $(".chp-sticky").css({"font-size":"", "margin": ""});
+            }
+        });
    });
     </script>
     

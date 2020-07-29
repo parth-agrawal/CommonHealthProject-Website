@@ -2203,9 +2203,11 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #47D3E5;
-			color: #47D3E5 !important;
+			box-shadow: inset 0 0 0 1px #2377AA;
+			color: #2377AA !important;
 		}
+
+
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
@@ -2450,6 +2452,18 @@ input, select, textarea {
 				top: -3px;
 				width: 1.8rem;
 				vertical-align: center;
+			}
+
+			input[type="checkbox"] + label:after { 
+				background-color: "";
+				transform: scale(2,2);
+				width: 1.8rem;
+				content: "X";
+				text-align: center;
+				color: black;
+				position: absolute;
+				left: -1.8em;
+				top:-1px;
 			}
 
 		input[type="checkbox"]:checked + label:before,
@@ -8855,7 +8869,6 @@ input, select, textarea {
 
 	.constructors-sticky {
 		left: 0;
-		font-size: 21px;
 		position: fixed;
 		top: 0px;
 		z-index: 2;
@@ -8886,6 +8899,8 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		color: white;
+		font-weight: bolder;
+		font-size: 1em;
 	}
 
 
@@ -9138,17 +9153,18 @@ input, select, textarea {
 	}
 }
 
-
+   
 /* For Constructors Page */
 
 .constructors-container { 
 	background-image: url(../../images/construction/construction-page-background.png);
 	background-position: top;
 	background-image: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	object-fit: contain;
+	overflow: hidden;
 	height: 618px;
-	width: 100%;
-	margin-top: 139px;
+	margin-top: 138px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -9182,6 +9198,7 @@ input, select, textarea {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 151px;
 }
 
 .three-steps-container .before-you-start{
@@ -9203,56 +9220,34 @@ input, select, textarea {
 	text-align: center;
 }
 
+/* Step 1 */
 .step1 {
 	color: #2C7BAC;
 	font-size: 2em;
-	margin: 151px auto 0.74em auto;
+	margin: 0px auto 0.74em auto;
 	font-weight: bold;
 }
 
-.step2 {
-	color: #2C7BAC;
-	font-size: 2em;
-	margin: 177px auto 0.95em auto;
-	font-weight: bold;
-}
-
-.step3 {
-	color: #2C7BAC;
-	font-size: 2em;
-	margin: 5em 0em 0em 0em;
-	font-weight: bold;
-}
-
-.step3-container button {
-	margin-top: 2.5em;
-}
 .step1-container :nth-child(2) {
 	font-size: 1.5em;
 	margin: 1em auto;
 	padding: 0px 0px 0px 0px;	
 }
 
-.step2-container {
-	margin-bottom: 1.95em;
+.construction-video {
+	display: block;
+	margin: 0 auto;
+	border-radius: 35px;
 }
 
-.step1-container button {
-	margin-top: 26px;
-	width: 18em;
-}
 .instructional-pdf-p {
 	margin: 111px 0em 0em 0em;
 	font-size: 1.5em;
 	font-weight: bolder;
 }
 
-.construction-button {
-	color:#2377AA !important; 
-	border: 2px solid #2377AA !important; 
-	text-decoration: none;
-	font-family: inherit;
-	letter-spacing: 0;
+.step1-container button {
+	margin-top: 26px;
 }
 
 .trouble-p {
@@ -9285,15 +9280,20 @@ input, select, textarea {
 }
 
 .trouble-videos {
-	margin: 0;
+	margin-bottom: 177px;
 	padding: 0;
 }
 
+/* Step 2*/
+.step2-container {
+	margin-bottom: 1.95em;
+}
 
-.construction-video {
-	display: block;
-	margin: 0 auto;
-	border-radius: 35px;
+.step2 {
+	color: #2C7BAC;
+	font-size: 2em;
+	margin: 0 auto 0.95em auto;
+	font-weight: bold;
 }
 
 .construction-checklist {
@@ -9306,10 +9306,143 @@ input, select, textarea {
 	margin: 1.7em 0px 0em 0px;
 }
 
-@media (max-width: 700px) {
-	.construction-video {
-		width: 350px;
+/* Step 3 */
+.step3 {
+	color: #2C7BAC;
+	font-size: 2em;
+	margin: 5em 0em 1em 0em;
+	font-weight: bold;
+}
+
+
+
+/* Construction Button */
+
+.construction-button {
+	color:#2377AA !important; 
+	border: 2px solid #2377AA !important; 
+	text-decoration: none;
+	font-family: inherit;
+	letter-spacing: 0;
+	width: 18em;
+}
+
+.construction-button a:hover {
+	color: #FFFFFF;
+}
+
+.construction-button:hover {
+	background-color: #2377AA;
+}
+
+.construction-button:hover a{
+	color: #FFFFFF;
+}
+
+.construction-button a {
+	color: #2377AA;
+	text-decoration: none; 
+	text-transform: none;
+}
+
+/* Mobile Responsive Construction Page*/
+
+@media (max-width: 600px) {
+	
+	.constructors-nonsticky1 {
+		
 	}
+	.constructors-nonsticky1 ul {
+		
+	}
+
+	.constructors-nonsticky1 ul li{
+		margin: 0px 20px 0px 0px;
+		
+	}
+	.constructors-nonsticky1 ul li a{
+		
+	}
+	.constructors-nonsticky1 .chp {
+		font-size: 1em;
+		left: 1em;
+	}
+	
+	.constructors-nonsticky2 {
+		top: 100px;
+	}
+
+	.constructors-nonsticky2 ul li {
+		width: 120%;
+	}
+	.constructors-nonsticky2 ul li a {
+		font-size: 0.75em;
+	}
+	
+	.constructors-container {
+		height: 400px;
+		object-fit: fill;
+	}
+
+	.hello-constructors {
+		color: white;
+		font-weight: bold;
+		font-size: 2.5em;
+		letter-spacing: 0.01em;
+	}
+	
+	.hello-constructors-caption {
+		color: white;
+		font-size: 0.8em;
+		letter-spacing: 0.03em;
+	
+	}
+	
+	.construction-video {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.three-steps-container {
+		background-color:#2377AA;
+		height: 100px;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	.three-steps-container .before-you-start{
+		width: 150%;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: 0em 174px 0em 30px;
+	}
+	
+	.three-steps-container .three-steps {
+		color: white;
+		font-size: 0.8em;
+		margin: 0em 19px 0em 0em;
+		font-weight: bolder;
+		width: 120%;
+	}
+
+	.trouble-videos {
+		margin: 0px 0px 40px 0px;
+	}
+
+	.trouble-videos video {
+		width: 300px;
+	}
+
+	.construction-checklist {
+		margin-left: 20px;
+	}
+
+
+
+
+
+
 }
 
 /* Statistics Page */

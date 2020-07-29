@@ -3,7 +3,7 @@
 Constructed by Lorrin Stone.
 Hi inspectors :) 
 -->
-<html>
+<html style="scroll-behavior: smooth">
 	<link rel="shortcut icon" href="images/logo-color.png" >
 	<head>
 		<title>The CommonHealth Project</title>
@@ -14,7 +14,7 @@ Hi inspectors :)
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
     <body class="is-preload">
-        <nav class="constructors-nonsticky1">
+        <nav class="constructors-nonsticky1" id="constructionstart">
             <a href="index.html" class="chp">The <b style="color: #2377AA; font-weight: bold;">CommonHealth</b> Project</a>
             <ul class="construction-ul">
                 <li><a href="whatwedo.html">What We Do</a></li>
@@ -25,21 +25,21 @@ Hi inspectors :)
         </nav>
         <div class="constructors-nonsticky2">
             <ul>
-                <li><a href="#ConfirmationForm">1. Construct Shields</a></li>
-                <li><a href="#ConstructShields">2. Quality Checklist</a></li>
-                <li><a href="">3. Shield Report Form</a></li>
+                <li><a href="#constructshields">1. Construct Shields</a></li>
+                <li><a href="#qualitychecklist">2. Quality Checklist</a></li>
+                <li><a href="#shieldreportform">3. Shield Report Form</a></li>
             </ul>                
         </div>
         <!--sticky header-->
         <div class="constructors-sticky">
             <ul>
-                <li><a href="#ConfirmationForm">1. Construct Shields</a></li>
-                <li><a href="#ConstructShields">2. Quality Checklist</a></li>
-                <li><a href="">3. Shield Report Form</a></li>
-                <li><a href=></a>Back to Top</li>
+                <li><a href="#constructshields">1. Construct Shields</a></li>
+                <li><a href="#qualitychecklist">2. Quality Checklist</a></li>
+                <li><a href="#shieldreportform">3. Shield Report Form</a></li>
+                <li><a href="#constructionstart" style="font-weight: bold;">Return To Top</a></li>
             </ul>                
         </div>
-        <div class="constructors-container">
+        <div class="constructors-container"> 
             <div>
                 <h1 class="hello-constructors">Hello Constructors</h1>
                 <p class="hello-constructors-caption">This is the place to be to construct face shields.</p>
@@ -51,6 +51,7 @@ Hi inspectors :)
         </div>
       <!--Construction Instructions section-->
     <div class="wrapper">
+        <div style="height: 100px;" id="constructshields"></div>
         <section class="step1-container">
             <div class="step1">Step 1: Construct the Face Shields</div>
             <p style="font-weight: bolder;">Check out this Face Shield Construction Tutorial</p>
@@ -59,7 +60,7 @@ Hi inspectors :)
                 <iframe class="construction-video" width="630" height="355" src="https://www.youtube.com/embed/Pyt_wHThplo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </ul>
             <p class="instructional-pdf-p">Or, check out this Instructional PDF:</p>
-            <button class="construction-button"><a href="https://drive.google.com/file/d/19-9RsTWUFxtq_qHhpRXyoHe_HXboTLc_/view?usp=sharing" style="color: #2377AA; text-decoration: none; text-transform: none;">Instructional PDF</a></button>	
+            <button class="construction-button"><a href="https://drive.google.com/file/d/19-9RsTWUFxtq_qHhpRXyoHe_HXboTLc_/view?usp=sharing">Instructional PDF</a></button>	
             <p class="trouble-p">Having Trouble? Use these tips!</p>
             <div class="trouble-tips">
                 <div class="trouble-videos"> 
@@ -79,6 +80,7 @@ Hi inspectors :)
             </div>
         </section>
 
+        <div style="height: 100px;" id="qualitychecklist"></div>
         <section class="step2-container">
             <div class="step2">Step 2: Quality Checklist</div>
             <ul class="construction-checklist">
@@ -105,9 +107,9 @@ Hi inspectors :)
             </ul>
         </section>
 
-        <section class="step3-container">
+        <section class="step3-container" id="shieldreportform">
             <div class="step3">Step 3: Shield Report Form</div>
-            <button class="construction-button"><a href="https://docs.google.com/forms/d/1AsJFmn0K614iB1OaSQFJ4-4_rewCxa6tD6Hs1DZ5VSM/edit?usp=drive_web" style="color: #2377AA; text-decoration: none; text-transform: none;">Shield Report Form</a></button>
+            <button class="construction-button"><a href="https://docs.google.com/forms/d/1AsJFmn0K614iB1OaSQFJ4-4_rewCxa6tD6Hs1DZ5VSM/edit?usp=drive_web">Shield Report Form</a></button>
         </section>
     </div>
                
@@ -141,21 +143,31 @@ Hi inspectors :)
             <script src="assets/js/main.js"></script>
             <script>
                 //Sticky Nav Bar
+            $(document).ready(function() {
                 $(".constructors-sticky").hide();
-                        $(window).scroll(function() {
-                        if ($(window).scrollTop() > 700) {
-                            $(".constructors-sticky").css({'z-index': '-1'}).slideDown(1);
-                        } else {
-                            $(".constructors-sticky").slideUp(10);
-                        }
-                        if ($(window).scrollTop() > 760) {
-                            $(".constructors-sticky").css("z-index", "2"); 
-                        }
-                        if ($(window).scrollTop() > 700) {
-                        } else {
-                            $(".constructors-sticky").hide();
-                        }
-                        })
-                </script>
+                    $(window).scroll(function() {
+                    if ($(window).scrollTop() > 900) {
+                        $(".constructors-sticky").css({'z-index': '-1'}).slideDown(1);
+                    } else {
+                        $(".constructors-sticky").slideUp(10);
+                    }
+                    if ($(window).scrollTop() > 960) {
+                        $(".constructors-sticky").css("z-index", "2"); 
+                    }
+                    if ($(window).scrollTop() > 900) {
+                    } else {
+                        $(".constructors-sticky").hide();
+                    };
+                });
+
+                $(window).resize(function () {
+                    if ($(window).width() <= 600) {
+                        $(".constructors-nonsticky1 .chp").text("CHP");
+                    } else {
+                        $(".constructors-nonsticky1 .chp").text("The CommonHealth Project");
+                    }
+                });
+            });
+            </script>
 	</body>
 </html>
