@@ -1,0 +1,121 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+.HP-model {
+    margin: 4% 10% 4% 10%;
+    max-width: 80%;
+    height: auto;
+}
+
+
+/*homepage stat banner*/
+.HP-banner {
+	height: auto;
+	background-color: #2377AA;
+	display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-rows: repeat(3,30%);
+    gap: 10%;
+}
+
+.HP-banner div {
+    margin: 20px;
+    margin-bottom: 4px;	
+    width: 33%;
+    height: auto;
+    
+}
+
+.HP-banner div:nth-child(1n) {
+    padding-left: 30%;
+}
+
+.HP-banner div:nth-child(3n) {
+    padding-right: 30%;
+}
+
+.HP-banner h1 {
+	color: white;
+	font-size: 4rem;
+	font-style: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+.HP-banner p {
+	color: white;
+	font-size: 1.6rem;
+	font-style: normal;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.HP-GI {
+	background-image: url(/images/homepage/Lines-01.png);
+	background-repeat: no-repeat;
+	margin: 5%, 7%, 10%, 7%; 
+}
+
+.HP-GI-img1 {
+   display: flex;
+    
+}
+
+.HP-GI-img1 img {
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+	max-width: 60%;
+}
+
+.HP-GI-img1 h2 {
+    flex: 1 1 auto;
+    width: 46%;
+    text-align: center;
+    @media (max-width: 620px) {
+        width: 100%;
+    }
+}
+
+.HP-GI-img2 {
+    display: flex;
+     
+ }
+ 
+ .HP-GI-img2 img {
+     height: auto;
+     object-fit: contain;
+     align-self: flex-start;
+     max-width: 60%;
+ }
+ 
+ .HP-GI-img2 h2 {
+     flex: 1 1 auto;
+     width: 46%;
+     text-align: center;
+     @media (max-width: 620px) {
+         width: 100%;
+     }
+ }
+
+ .HP-GI-img3 {
+    display: flex;
+     
+ }
+ 
+ .HP-GI-img3 img {
+     height: auto;
+     object-fit: contain;
+     align-self: flex-start;
+     max-width: 60%;
+ }
+ 
+ .HP-GI-img3 h2 {
+     flex: 1 1 auto;
+     width: 46%;
+     text-align: center;
+     @media (max-width: 620px) {
+         width: 100%;
+     }
+ }
+ 
