@@ -70,7 +70,7 @@ Hi inspectors :)
                         <source src="videos/foamvideo.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="trouble-videos" style="margin: 0;">
+                <div class="trouble-videos" id="trouble-video-2" style="margin: 0 auto;">
                     <figcaption class="caption2"> How do I attach the shield to the frame?</figcaption>
                     <video width="441" height="288" controls style="margin: 0.46em 0px 0px 0px; height: auto; border-radius: 22px;">
                         <source src="videos/attachment.mov" type="video/mov">
@@ -145,7 +145,7 @@ Hi inspectors :)
                 //Sticky Nav Bar
             $(document).ready(function() {
                 $(".constructors-sticky").hide();
-                    $(window).scroll(function() {
+                $(window).scroll(function() {
                     if ($(window).scrollTop() > 900) {
                         $(".constructors-sticky").css({'z-index': '-1'}).slideDown(1);
                     } else {
@@ -163,9 +163,45 @@ Hi inspectors :)
                 $(window).resize(function () {
                     if ($(window).width() <= 600) {
                         $(".constructors-nonsticky1 .chp").text("CHP");
+                        $(".constructors-nonsticky1 .chp").css({"font-weight": "bolder", "font-size:": "0.5em", "top": "0.5em"});
                     } else {
                         $(".constructors-nonsticky1 .chp").text("The CommonHealth Project");
+                        $(".constructors-nonsticky1 .chp").css({"font-weight": "", "font-size:": "1.75em", "top": "0.35em"});
                     }
+                    if ($(window).width() <= 600) {
+                        $(".constructors-nonsticky1 li").css("font-size", "8px");
+                    } else {
+                        $(".constructors-nonsticky1 li").css("font-size", "1em");
+                    }
+                    if ($(window).width() <= 600) {
+                        $(".constructors-nonsticky1").css("height", "40px");
+                    } else {
+                        $(".constructors-nonsticky1").css("height", "80px");
+                    }
+                    if ($(window).width() <= 600) {
+                        $(".constructors-nonsticky2").css("top", "40px");
+                    } else {
+                        $(".constructors-nonsticky2").css("top", "80px");
+                    }
+                    if ($(window).width() <= 600) {
+                        $(".constructors-container").css("margin-top", "85px");
+                    } else {
+                        $(".constructors-container").css("margin-top", "138px");
+                    }
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() > 400) {
+                            $(".constructors-sticky").css({'z-index': '-1'}).slideDown(1);
+                        } else {
+                            $(".constructors-sticky").slideUp(10);
+                        }
+                        if ($(window).scrollTop() > 560) {
+                            $(".constructors-sticky").css("z-index", "2"); 
+                        }
+                        if ($(window).scrollTop() > 600) {
+                        } else {
+                            $(".constructors-sticky").hide();
+                        };
+                    });
                 });
             });
             </script>

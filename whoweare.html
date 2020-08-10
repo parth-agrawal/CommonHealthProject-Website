@@ -216,21 +216,38 @@
    
     $(document).ready(function () {
         // Sticky Nav Bar Functionality
-       
+        $(".nav-sticky").hide(); 
         $(window).scroll(function () {
-            if ($(window).scrollTop() < 620) {
+            if ($(window).scrollTop() < 670) {
                 $(".nav-sticky").hide();            
             }
-            if ($(window).scrollTop() > 640) {
-                $(".nav-sticky").show().slideDown(50);
+            if ($(window).scrollTop() > 680) {
+                $(".nav-sticky").show().slideDown(100);
             } 
-            if ($(window).scrollTop() > 670) {
-                $(".nav-sticky").css("background-color", "white").slideDown(50);
+            if ($(window).scrollTop() > 700) {
+                $(".nav-sticky").css({"z-index":"4"});
             }
-
+            
+            
         });
+        
+       
+        //     $(window).scroll(function() {
+        //     if ($(window).scrollTop() > 620) {
+        //         $(".nav-sticky").css({'z-index': '-1'}).slideDown(1);
+        //     } else {
+        //         $(".nav-sticky").slideUp(10);
+        //     }
+        //     if ($(window).scrollTop() > 660) {
+        //         $(".nav-sticky").css("z-index", "8"); 
+        //     }
+        //     if ($(window).scrollTop() > 670) {
+        //     } else {
+        //         $(".nav-sticky").hide();
+        //     };
+        // });
 
-        $(".nav-sticky").show().slideDown(50);
+
 
         // if ($(window).scrollTop() < 620) {
         //         $(".nav-sticky").hide();

@@ -2458,7 +2458,7 @@ input, select, textarea {
 				background-color: "";
 				transform: scale(2,2);
 				width: 1.8rem;
-				content: "X";
+				/* content: "X"; */
 				text-align: center;
 				color: black;
 				position: absolute;
@@ -8741,6 +8741,8 @@ input, select, textarea {
 		width: 100%;
 		display: flex; 
 		justify-content: space-between;
+		background-color: white;
+		z-index: 1;
 		
 	}
 
@@ -8772,7 +8774,7 @@ input, select, textarea {
 		margin: 10px 0px 0px 60px;
 		padding: 20px 0;
 		font-size: 26px;
-		color: #2C7BAC;
+		color: #2377AA;
 		font-weight: bold;
 	}
 
@@ -8833,7 +8835,7 @@ input, select, textarea {
 		width: 100%;
 		display: flex; 
 		justify-content: space-around;
-		background-color: #2C7BAC;
+		background-color: #2377AA;
 	}
 
 	.constructors-nonsticky2 ul {
@@ -8874,7 +8876,7 @@ input, select, textarea {
 		width: 100%;
 		display: flex; 
 		justify-content: space-around;
-		background-color: #2C7BAC;
+		background-color: #2377AA;
 	}
 
 	.constructors-sticky ul {
@@ -9246,7 +9248,7 @@ input, select, textarea {
 
 /* Step 1 */
 .step1 {
-	color: #2C7BAC;
+	color: #2377AA;
 	font-size: 2em;
 	margin: 0px auto 0.74em auto;
 	font-weight: bold;
@@ -9300,12 +9302,16 @@ input, select, textarea {
 .caption2 {
 	font-size: 0.75em;
 	font-weight: bolder;
-
 }
 
 .trouble-videos {
 	margin-bottom: 177px;
 	padding: 0;
+}
+
+#trouble-video-2 {
+	position: relative;
+	left: 40px
 }
 
 /* Step 2*/
@@ -9373,20 +9379,11 @@ input, select, textarea {
 
 @media (max-width: 600px) {
 	
-	.constructors-nonsticky1 {
-		
-	}
-	.constructors-nonsticky1 ul {	
-		
-	}
-
 	.constructors-nonsticky1 ul li{
 		margin: 0px 20px 0px 0px;
 
 	}
-	.constructors-nonsticky1 ul li a{
-		
-	}
+
 	.constructors-nonsticky1 .chp {
 		font-size: 1em;
 		left: 1em;
@@ -9451,11 +9448,21 @@ input, select, textarea {
 	}
 
 	.trouble-videos {
-		margin: 0px 0px 40px 0px;
+		margin: 0 auto;
 	}
 
 	.trouble-videos video {
-		width: 300px;
+		width: 250px;
+		margin: 0;
+	}
+
+	#trouble-video-2 {
+		left: 0px;
+	}
+
+	.caption2 {
+		font-size: 0.6em;
+		margin-top: 20px;
 	}
 
 	.construction-checklist {
