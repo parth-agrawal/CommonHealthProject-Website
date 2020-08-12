@@ -8638,7 +8638,50 @@ input, select, textarea {
 				box-shadow: none !important;
 			}
 
-
+/* Arrow CSS */
+[class*="icono"] {
+	position: relative;
+	display: inline-block;
+	color: white;
+	right: 200px;
+	box-sizing: border-box;
+	}
+	[class*="icono"]:after,
+	[class*="icono"]:before {
+	content: "";
+	box-sizing: border-box;
+	}
+	[class*="icono-arrow1"] {
+	width: 20px;
+	height: 20px;
+	border-width: 4px 4px 0 0;
+	border-style: solid;
+	
+	}
+	[class*="icono-arrow1"]:before {
+	right: 0;
+	top: -3px;
+	position: absolute;
+	height: 4px;
+	box-shadow: inset 0 0 0 32px;
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+	width: 23px;
+	-webkit-transform-origin: right top;
+			transform-origin: right top;
+	}
+	[class*="icono-arrow1"][class*="-left"] {
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+	}
+	[class*="icono-arrow1"][class*="-left"][class*="-up"] {
+	-webkit-transform: none;
+			transform: none;
+	}
+	[class*="icono-arrow1"][class*="-left"][class*="-down"] {
+	-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+	}
 	/* Redesign V3 */
 	
 	.wrapper {
@@ -8722,6 +8765,7 @@ input, select, textarea {
 		list-style: none;
 		margin: 30px 60px 30px 0px;
 		position: relative;
+		opacity: 70%;
 	}
 
 	.nav ul li a {
@@ -8742,7 +8786,7 @@ input, select, textarea {
 		display: flex; 
 		justify-content: space-between;
 		background-color: white;
-		z-index: 1;
+		z-index: 2;
 		
 	}
 
@@ -8943,25 +8987,36 @@ input, select, textarea {
 	}
 
 	.how-we-started-content {
-		font-size: 25px;
+		font-size: 1em;
+		line-height: 2em;
+		margin: 0px 0px 186px 0px;
 	}
 
 	.the-challenge-container {
+		background-image: url(../../images/challenge_picture.jpg);
+		background-size: 100% 250%;
+		background-color: rgba(44,44,44,0.67);
+		background-blend-mode: multiply;
+		height: 360px;
+		background-position: center;
 		display: flex;
 		justify-content: space-between;
-		height: 360px;
 		align-items: center;
+		flex-wrap: nowrap;
+		color: white;
 	}
 	
 	.challenge-1 {
 		font-size: 2em;
-		font-weight: bolder;
+		font-weight: bold;
+		margin-left: 100px;
 	}
 
 	.challenge-2 {
 		width: 494px;
 		font-size: 1.5em;
 		text-align: right;
+		margin-right: 100px;
 	}
 
 

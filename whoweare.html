@@ -16,7 +16,7 @@
     <!-- About Us Header -->
         <div class="who-we-are-container">
             <nav class="nav">
-                <a href="index.html" class="chp">The CommonHealth Project</a>
+                <a href="index.html" class="chp">The <b style="color: white; font-weight: bold;">CommonHealth</b> Project</a>
                 <ul>
                     <li><a href="whatwedo.html">What We Do</a></li>
                     <li><a href="whoweare.html">Who We Are</a></li>
@@ -46,13 +46,14 @@
                 <p class="how-we-started-header">How We Started</p>
                 <p class="how-we-started-content">We began as a response to a design challenge proposed by the NJIT Albert Dorman Honors College for a medically sound, marketable face shield. Seeing our friends and family risking their lives and continuing work without equipment, we knew we needed to help. But we had a challenge – how could we mass produce the face shields without an assembly line, which are risky in quarantine?</p>
             </div>
-
+        </div>
             <div class="the-challenge-container">
                 <div class="challenge-1">The Challenge</div>
+                <i class="icono-arrow1-left"></i>
                 <div class="challenge-2">How could we mass produce the face shields without an assembly line, which is risky during the pandemic?</div>
             </div>
 
-            
+        <div class="wrapper">   
         <!-- Our Team  -->
             <p class="team-header">Leadership</p>
             <div class="first-row">
@@ -217,36 +218,37 @@
     $(document).ready(function () {
         // Sticky Nav Bar Functionality
         $(".nav-sticky").hide(); 
-        $(window).scroll(function () {
-            if ($(window).scrollTop() < 670) {
-                $(".nav-sticky").hide();            
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 620) {
+                $(".nav-sticky").show().css({'z-index': '-1'}).slideDown(1);
+            } else {
+                $(".nav-sticky").slideUp(10);
             }
-            if ($(window).scrollTop() > 680) {
-                $(".nav-sticky").show().slideDown(100);
-            } 
-            if ($(window).scrollTop() > 700) {
-                $(".nav-sticky").css({"z-index":"4"});
+            if ($(window).scrollTop() > 660) {
+                $(".nav-sticky").css("z-index", "8"); 
             }
-            
-            
+            if ($(window).scrollTop() > 670) {
+            } else {
+                $(".nav-sticky").hide();
+            };
         });
-        
-       
-        //     $(window).scroll(function() {
-        //     if ($(window).scrollTop() > 620) {
-        //         $(".nav-sticky").css({'z-index': '-1'}).slideDown(1);
-        //     } else {
-        //         $(".nav-sticky").slideUp(10);
-        //     }
-        //     if ($(window).scrollTop() > 660) {
-        //         $(".nav-sticky").css("z-index", "8"); 
-        //     }
-        //     if ($(window).scrollTop() > 670) {
-        //     } else {
-        //         $(".nav-sticky").hide();
-        //     };
-        // });
 
+        // $(".nav-sticky").hide(); 
+        // $(window).scroll(function () {
+        //     if ($(window).scrollTop() < 700) {
+        //         $(".nav-sticky").hide();            
+        //     }
+        //     if ($(window).scrollTop() > 700) {
+        //         $(".nav-sticky").show().slideDown(100);
+        //     } 
+        //     if ($(window).scrollTop() > 710) {
+        //         $(".nav-sticky").css({"z-index":"4"});
+        //     }
+            
+            
+        // });
+        
+        
 
 
         // if ($(window).scrollTop() < 620) {
@@ -312,7 +314,7 @@
         //         $(".chp-sticky").css({"font-size":"", "margin": ""});
         //     }
         // });
-   });
+    });
     </script>
     
 </body>
